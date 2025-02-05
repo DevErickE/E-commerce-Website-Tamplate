@@ -22,4 +22,73 @@ html, body {
     margin: 0; /* Remove qualquer margem padrão */
     padding: 0; /* Remove qualquer padding padrão */
     box-sizing: border-box; /* Garante o cálculo correto de dimensões */
+    display: flex; /* Alinha os elementos lado a lado */
+    align-items: flex-start; /* Alinha os elementos no topo */
+    margin-top: 35px; /* Move os elementos para baixo */
+    
 }
+
+
+p {
+    margin: 0; /* Remove margem padrão */
+    padding: 0.5rem 1rem; /* Ajusta o espaçamento interno */
+    font-size: 1rem; /* Tamanho do texto */
+    font-family: Arial, sans-serif; /* Fonte legível */
+}
+
+.shopco {
+    font-weight: bold; /* Torna o texto em negrito */
+    font-size: 2rem; /* Define um tamanho de fonte grande */
+    color: black; /* Define a cor preta */
+    margin-right: 2rem; /* Adiciona um pequeno espaçamento à direita */
+    margin-left: 3rem; /* Aumenta o espaçamento à esquerda para mover para a direita */
+}
+
+.brands {
+    margin-right: 40px; /* Adiciona um espaçamento à direita */
+}
+
+
+.pesquisa {
+    padding: 0.5rem; /* Espaço interno do campo de pesquisa */
+    font-size: 1rem; /* Tamanho de fonte adequado */
+    border: 2px solid #ccc; /* Borda cinza clara */
+    border-radius: 50px; /* Bordas arredondadas, típica das barras de pesquisa modernas */
+    width: 1000px; /* Largura do campo de pesquisa */
+    outline: none; /* Remove a borda de foco padrão */
+    transition: border-color 0.3s ease; /* Transição suave ao focar */
+    padding-left: 40px; /* Espaço para o ícone da lupa */
+    position: relative; /* Para posicionar o ícone dentro do campo */
+}
+
+.pesquisa::before {
+    content: "";
+    position: absolute;
+    left: 12px; /* Distância da borda esquerda */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta para que a lupa fique no meio */
+    width: 16px; /* Largura da lupa */
+    height: 16px; /* Altura da lupa */
+    border: 3px solid #333; /* Cor da borda da lupa */
+    border-radius: 50%; /* Torna a borda redonda */
+    background-color: transparent; /* Cor de fundo transparente */
+    box-sizing: border-box;
+}
+
+.pesquisa::before {
+    border-left: none; /* Remove a borda esquerda para criar o "haste" da lupa */
+    border-bottom: none; /* Remove a borda inferior para criar a "haste" da lupa */
+}
+
+.pesquisa:focus {
+    border-color: #007bff; /* Cor da borda ao focar (azul) */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona sombra azul */
+}
+
+.pesquisa::placeholder {
+    color: #999; /* Cor do texto do placeholder */
+    font-style: italic; /* Texto do placeholder em itálico */
+}
+
+
+
