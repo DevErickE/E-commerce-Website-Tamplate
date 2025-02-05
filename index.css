@@ -1,0 +1,25 @@
+.negrito {
+
+    text-decoration: underline;
+
+}
+
+footer {
+    background-color: #000; /* Fundo preto */
+    color: #fff; /* Escrita branca */
+    text-align: center;
+    padding: 0.25rem; /* Altura menor */
+    font-size: 0.90rem; /* Texto um pouco menor */
+    position: fixed;
+    top: 0; /* Posicionado no topo */
+    width: 100%; /* Largura total */
+    box-shadow: none; /* Sem sombra */
+    z-index: 1000; /* Para ficar acima de outros elementos */
+}
+
+
+html, body {
+    margin: 0; /* Remove qualquer margem padrão */
+    padding: 0; /* Remove qualquer padding padrão */
+    box-sizing: border-box; /* Garante o cálculo correto de dimensões */
+}
