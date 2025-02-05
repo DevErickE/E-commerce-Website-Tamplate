@@ -92,3 +92,15 @@ p {
 
 
 
+.letras {
+    font-size: 3rem; /* Tamanho grande da fonte */
+    font-weight: bold; /* Torna a fonte em negrito */
+    text-align: left; /* Alinha o texto à esquerda */
+    margin-top: 100px; /* Espaçamento acima para separá-lo do conteúdo anterior */
+    margin-left: -1460px; /* Espaçamento à esquerda, em pixels */
+    color: #333; /* Cor escura para o texto */
+    letter-spacing: 2px; /* Espaçamento entre as letras para um efeito mais espaçado */
+}
+
+
+
