@@ -157,6 +157,36 @@ footer {
 
     .image_roupas {
 
-        margin-left: 800px;
+        margin-left: 700px;
         margin-top: -350px;
     }
+
+    /* Estilo para a linha preta que ocupa a largura total da página */
+.linha-marcas {
+  background-color: black; /* Cor de fundo preta */
+  color: white; /* Cor do texto branca */
+  text-align: center; /* Alinha o texto no centro */
+  width: 100%; /* Garante que ocupe toda a largura da página */
+  position: relative; /* Necessário para posicionar elementos internos corretamente */
+  padding: 20px 0; /* Espaçamento dentro da linha preta */
+  box-sizing: border-box; /* Faz com que o padding não afete a largura total */
+}
+
+/* Flexbox para as marcas ficarem lado a lado */
+.marcas_famosas {
+  display: flex; /* Habilita o modelo de layout flexbox */
+  justify-content: center; /* Centraliza as marcas horizontalmente */
+  gap: 40px; /* Espaço entre as marcas */
+  flex-wrap: wrap; /* Permite que as marcas quebrem para a linha seguinte, se necessário */
+}
+
+.marcas_famosas p {
+  font-size: 30px; /* Aumenta o tamanho da fonte */
+  font-weight: bold; /* Texto em negrito */
+  margin: 0; /* Remove as margens padrão dos parágrafos */
+}
+
+/* Efeito ao passar o mouse */
+.marcas_famosas p:hover {
+  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
