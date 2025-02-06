@@ -1,106 +1,152 @@
-.negrito {
+/* Container geral */
+.shop-container {
+    display: flex; /* Flexbox para alinhar os itens horizontalmente */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    justify-content: flex-start; /* Alinha à esquerda */
+    width: 100%;
+    margin-left: 100px; /* Move todo o conteúdo para a direita em 50px */
 
-    text-decoration: underline;
+  }
 
-}
+  /* SHOP.CO à esquerda */
+  .shopco {
+    font-weight: bold;
+    font-size: 30px;
+    color: black;
+    margin-right: 30px; /* Espaço entre o SHOP.CO e os itens ao lado */
+  }
+
+  /* Estilos da barra de navegação */
+  .barradecima {
+    display: flex; /* Flexbox para alinhar os itens na linha */
+    gap: 17px; /* Pequeno espaçamento entre os itens */
+  }
+
+  /* Estilos para os itens da navegação */
+  .barradecima p {
+    margin: 0; /* Remove margens */
+    font-size: 20px; /* Tamanho da fonte */
+    color: black; /* Cor do texto */
+  }
+
 
 footer {
-    background-color: #000; /* Fundo preto */
-    color: #fff; /* Escrita branca */
-    text-align: center;
-    padding: 0.25rem; /* Altura menor */
-    font-size: 0.90rem; /* Texto um pouco menor */
-    position: fixed;
-    top: 0; /* Posicionado no topo */
-    width: 100%; /* Largura total */
-    box-shadow: none; /* Sem sombra */
-    z-index: 1000; /* Para ficar acima de outros elementos */
-}
+    position: fixed; /* Posiciona o footer de forma fixa */
+    top: 0; /* Fixa no topo */
+    left: 0; /* Garante que comece na borda esquerda da tela */
+    width: 100%; /* Ocupar toda a largura da tela */
+    background-color: #040404; /* Cor de fundo */
+    padding: 10px 0; /* Espaçamento vertical */
+    text-align: center; /* Centraliza o texto */
+    font-size: 16px; /* Tamanho da fonte */
+    color: #b4b0b0; /* Cor do texto */
+    z-index: 1000; /* Garante que o footer apareça sobre outros elementos */
+    box-sizing: border-box; /* Garante que o padding não afete a largura */
+  }
+
+  footer p {
+    margin: 0; /* Remove margens padrão do parágrafo */
+  }
+
+  .negrito {
+    font-weight: bold; /* Texto em negrito */
+    color: #ffffff; /* Cor azul para o link */
+    text-decoration: none; /* Remove sublinhado do link */
+  }
+
+  .negrito:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  }
 
 
-html, body {
-    margin: 0; /* Remove qualquer margem padrão */
-    padding: 0; /* Remove qualquer padding padrão */
-    box-sizing: border-box; /* Garante o cálculo correto de dimensões */
-    display: flex; /* Alinha os elementos lado a lado */
-    align-items: flex-start; /* Alinha os elementos no topo */
-    margin-top: 35px; /* Move os elementos para baixo */
-    
-}
-
-
-p {
-    margin: 0; /* Remove margem padrão */
-    padding: 0.5rem 1rem; /* Ajusta o espaçamento interno */
-    font-size: 1rem; /* Tamanho do texto */
-    font-family: Arial, sans-serif; /* Fonte legível */
-}
-
-.shopco {
-    font-weight: bold; /* Torna o texto em negrito */
-    font-size: 2rem; /* Define um tamanho de fonte grande */
-    color: black; /* Define a cor preta */
-    margin-right: 2rem; /* Adiciona um pequeno espaçamento à direita */
-    margin-left: 3rem; /* Aumenta o espaçamento à esquerda para mover para a direita */
-}
-
-.brands {
-    margin-right: 40px; /* Adiciona um espaçamento à direita */
-}
-
-
-.pesquisa {
-    padding: 0.5rem; /* Espaço interno do campo de pesquisa */
-    font-size: 1rem; /* Tamanho de fonte adequado */
-    border: 2px solid #ccc; /* Borda cinza clara */
-    border-radius: 50px; /* Bordas arredondadas, típica das barras de pesquisa modernas */
-    width: 1000px; /* Largura do campo de pesquisa */
-    outline: none; /* Remove a borda de foco padrão */
-    transition: border-color 0.3s ease; /* Transição suave ao focar */
-    padding-left: 40px; /* Espaço para o ícone da lupa */
-    position: relative; /* Para posicionar o ícone dentro do campo */
-}
-
-.pesquisa::before {
-    content: "";
-    position: absolute;
-    left: 12px; /* Distância da borda esquerda */
-    top: 50%; /* Centraliza verticalmente */
-    transform: translateY(-50%); /* Ajusta para que a lupa fique no meio */
-    width: 16px; /* Largura da lupa */
-    height: 16px; /* Altura da lupa */
-    border: 3px solid #333; /* Cor da borda da lupa */
-    border-radius: 50%; /* Torna a borda redonda */
-    background-color: transparent; /* Cor de fundo transparente */
-    box-sizing: border-box;
-}
-
-.pesquisa::before {
-    border-left: none; /* Remove a borda esquerda para criar o "haste" da lupa */
-    border-bottom: none; /* Remove a borda inferior para criar a "haste" da lupa */
-}
-
-.pesquisa:focus {
-    border-color: #007bff; /* Cor da borda ao focar (azul) */
-    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Adiciona sombra azul */
-}
-
-.pesquisa::placeholder {
-    color: #999; /* Cor do texto do placeholder */
-    font-style: italic; /* Texto do placeholder em itálico */
-}
-
-
-
-.letras {
-    font-size: 3rem; /* Tamanho grande da fonte */
-    font-weight: bold; /* Torna a fonte em negrito */
+.text-container {
     text-align: left; /* Alinha o texto à esquerda */
-    margin-top: 100px; /* Espaçamento acima para separá-lo do conteúdo anterior */
-    margin-left: -1460px; /* Espaçamento à esquerda, em pixels */
-    color: #333; /* Cor escura para o texto */
-    letter-spacing: 2px; /* Espaçamento entre as letras para um efeito mais espaçado */
-}
+    font-size: 48px; /* Tamanho grande para as letras */
+    line-height: 1.2; /* Espaçamento entre as linhas */
+    color: black; /* Cor do texto */
+    margin: 0;
+    padding: 0;
+    margin-left: 100px; /* Move todo o conteúdo para a direita em 50px */
 
+  }
 
+  .text-container p {
+    margin: 0;  
+    font-weight: 900; /* Máxima espessura do peso */
+    font-family: Arial Black, sans-serif; /* Fonte com traço grosso */
+    -webkit-text-stroke: 1px black; /* Contorno no texto para aumentar a espessura */
+    color: black; /* Preenche o texto com preto */
+  }
 
+  .text-paragraph {
+    text-align: left; /* Alinha o texto à esquerda */
+    color: #848282; /* Tom cinza claro */
+    font-size: 16px; /* Mantém o tamanho original (ajustável conforme necessário) */
+    line-height: 1.5; /* Espaçamento entre linhas */
+    max-width: 600px; /* Define uma largura máxima para melhor legibilidade */
+    margin: 0; /* Remove margens extras */
+    margin-left: 110px;
+  }
+
+  .shop-button {
+    display: inline-block; /* Permite que o botão tenha tamanho ajustável */
+    padding: 15px 30px; /* Aumenta o tamanho do botão sem afetar o texto */
+    background-color: black; /* Cor de fundo preta */
+    color: white; /* Cor do texto branca */
+    font-size: 16px; /* Tamanho da fonte (não muda) */
+    font-weight: bold; /* Texto em negrito */
+    text-align: center; /* Centraliza o texto */
+    text-decoration: none; /* Remove sublinhado, caso seja usado em links */
+    border: none; /* Remove bordas padrão */
+    border-radius: 20px; /* Torna as bordas arredondadas */
+    cursor: pointer; /* Mostra o ícone de "mão" no hover */
+    transition: background-color 0.3s ease; /* Animação suave para hover */
+    margin-left: 110px;
+    width: 110px;
+  }
+  
+  .shop-button:hover {
+    background-color: #333; /* Fundo cinza escuro no hover */
+  }
+  
+
+.stats-container {
+    display: flex;
+    gap: 40px; /* Espaçamento entre os blocos */
+    justify-content: center; /* Centralizar os blocos horizontalmente */
+    align-items: center; /* Alinhar os blocos verticalmente */
+    margin-right: 1200px;
+  }
+
+  .stat-item {
+    text-align: left; /* Centralizar o texto dentro do bloco */
+  }
+
+  .stat-item p:first-child {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0; /* Remove margens padrão */
+  }
+
+  .stat-item p:last-child {
+    font-size: 16px;
+    margin: 5px 0 0 0; /* Pequeno espaçamento acima */
+    color: #555; /* Cor do texto (opcional) */
+  }
+
+ .pesquisa {
+      padding: 8px 12px;
+      font-size: 16px;
+      border: 1px solid #ccc; /* Borda leve */
+      border-radius: 25px; /* Borda arredondada */
+      margin-left: 50px; /* Espaçamento à esquerda do campo de pesquisa */
+      height: 35px;
+      transition: all 0.3s ease; /* Transição suave ao interagir */
+      width: 800px;
+    }
+
+    /* Estilo para o foco do campo de pesquisa */
+    .pesquisa:focus {
+      border-color: #007bff; /* Altera a cor da borda ao focar */
+      outline: none; /* Remove o contorno padrão do navegador */
+    }
