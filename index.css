@@ -1,3 +1,7 @@
+body {
+    background-color: rgb(245, 241, 241); /* Cor de fundo azul claro */
+  }
+  
 /* Container geral */
 .shop-container {
     display: flex; /* Flexbox para alinhar os itens horizontalmente */
@@ -149,4 +153,10 @@ footer {
     .pesquisa:focus {
       border-color: #007bff; /* Altera a cor da borda ao focar */
       outline: none; /* Remove o contorno padrão do navegador */
+    }
+
+    .image_roupas {
+
+        margin-left: 800px;
+        margin-top: -350px;
     }
