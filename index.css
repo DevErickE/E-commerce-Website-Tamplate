@@ -190,3 +190,11 @@ footer {
 .marcas_famosas p:hover {
   text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
 }
+
+.new-arrivals {
+  text-align: center; /* Centraliza o texto */
+  font-weight: bold; /* Deixa o texto em negrito */
+  font-size: 35px; /* Define o tamanho da fonte um pouco maior */
+  margin: 0; /* Remove margens padrão */
+  
+}
