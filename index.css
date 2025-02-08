@@ -292,33 +292,41 @@ footer {
   font-weight: bold;
 }
 
+/* Estilo para a porcentagem de desconto */
+.discount {
+  color: rgb(250, 52, 52); /* Cor do texto */
+  background-color: rgba(255, 0, 0, 0.1); /* Vermelho bem claro */
+  border: 2px solid #fdd4d4; /* Borda vermelha fraca, aumentando a espessura */
+  padding: 5px 10px; /* Aumentando o espaçamento interno */
+  border-radius: 20px; /* Borda arredondada, aumentando o raio */
+  font-size: 10px;
+  margin-top: -12px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+
 /* Preços com descontos */
 .discounted {
   text-decoration: line-through;
   color: #808080; /* Cor cinza clara para o preço riscado */
   font-size: 18px; /* Tamanho de fonte igual aos outros preços */
-  margin-right: 10px;
+  margin-top: -10px;
+  
 }
 
-/* Estilo para a porcentagem de desconto */
-.discount {
-  font-size: 14px;
-  color: red;
-  background-color: #f0f0f0; /* Cor de fundo clara */
-  border: 1px solid #ccc; /* Borda cinza */
-  padding: 2px 5px;
-  margin-top: 4px;
-  border-radius: 4px;
+.preços-descontos {
+  display: flex; /* Alinha os itens horizontalmente */
+  gap: 10px;
+  margin-left: 790px;
+  margin-top: -29px;
 }
 
-/* Preços não riscado e porcentagens menores */
-.price {
-  font-size: 18px;
-  font-weight: bold;
-}
+.preços-descontos1 {
+  display: flex; /* Alinha os itens horizontalmente */
+  gap: 10px;
+  margin-left: 1260px;
+  margin-top: -33px;
 
-/* Tamanho reduzido para as porcentagens */
-.discount-group .discount {
-  font-size: 14px;
 }
 
