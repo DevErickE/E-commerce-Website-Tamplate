@@ -198,3 +198,127 @@ footer {
   margin: 0; /* Remove margens padrão */
   
 }
+
+
+.roupas-vendas {
+  margin-left: 500px;
+  margin-top: 50px;
+  display: flex; /* Organiza as imagens em uma linha flexível */
+  flex-wrap: wrap; /* Permite que imagens "quebrem" para a linha seguinte se necessário */
+  gap: 40px; /* Espaçamento horizontal e vertical entre as imagens */
+}
+
+.nome-roupas {
+  margin-left: 510px;
+  display: flex; /* Organiza as imagens em uma linha flexível */
+  flex-wrap: wrap; /* Permite que imagens "quebrem" para a linha seguinte se necessário */
+  gap: 97px; /* Espaçamento horizontal e vertical entre as imagens */
+  
+}
+
+.rating {
+  display: flex; /* Coloca os grupos em uma linha */
+  margin-left: 505px;
+  gap: 115px; /* Espaçamento entre os grupos */
+  justify-content: start; /* Alinha os grupos à esquerda */
+  align-items: center; /* Alinha verticalmente os grupos */
+}
+
+.stars-group {
+  display: flex;
+  align-items: center; /* Alinha estrelas e números no centro */
+  gap: 5px; /* Espaçamento entre as estrelas e o número */
+}
+
+.star {
+  display: inline-block;
+  width: 15px; /* Tamanho menor das estrelas */
+  height: 15px;
+  background-color: transparent;
+  clip-path: polygon(
+    50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
+    50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
+  );
+}
+
+.star.full {
+  background-color: gold; /* Estrela preenchida */
+}
+
+.star.half {
+  background: linear-gradient(to right, gold 50%, #ccc 50%);
+}
+
+.rating-number {
+  font-size: 10.5px; /* Tamanho do número */
+  font-weight: bold;
+  color: #333;
+}
+
+
+.view-all-button {
+  display: inline-block; /* Torna o elemento clicável como um botão */
+  padding: 5px 10px; /* Adiciona um pouco de espaçamento interno */
+  font-size: 12px; /* Letras bem pequenas */
+  font-weight: bold; /* Coloca o texto em negrito */
+  color: rgba(0, 0, 0, 0.6); /* Texto com claridade baixa (cinza claro) */
+  background-color: rgba(0, 0, 0, 0.1); /* Fundo com claridade baixa */
+  border: none; /* Sem borda */
+  border-radius: 5px; /* Bordas levemente arredondadas */
+  text-align: center; /* Centraliza o texto */
+  cursor: pointer; /* Mostra o ícone de mão no hover */
+  transition: all 0.3s ease; /* Transição suave ao passar o mouse */
+  justify-content: center;
+  margin-left: 890px;
+}
+
+.view-all-button:hover {
+  background-color: rgba(0, 0, 0, 0.2); /* Fundo ligeiramente mais escuro no hover */
+  color: rgba(0, 0, 0, 0.8); /* Texto um pouco mais escuro no hover */
+}
+
+/* Contêiner para organizar os preços */
+.price-container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 505px;
+  margin-top: -20px;
+  gap: 200px; /* Espaçamento entre os elementos */
+}
+
+/* Estilo para os preços principais */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Preços com descontos */
+.discounted {
+  text-decoration: line-through;
+  color: #808080; /* Cor cinza clara para o preço riscado */
+  font-size: 18px; /* Tamanho de fonte igual aos outros preços */
+  margin-right: 10px;
+}
+
+/* Estilo para a porcentagem de desconto */
+.discount {
+  font-size: 14px;
+  color: red;
+  background-color: #f0f0f0; /* Cor de fundo clara */
+  border: 1px solid #ccc; /* Borda cinza */
+  padding: 2px 5px;
+  margin-top: 4px;
+  border-radius: 4px;
+}
+
+/* Preços não riscado e porcentagens menores */
+.price {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* Tamanho reduzido para as porcentagens */
+.discount-group .discount {
+  font-size: 14px;
+}
+
