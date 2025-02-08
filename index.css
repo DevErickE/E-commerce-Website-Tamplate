@@ -195,8 +195,7 @@ footer {
   text-align: center; /* Centraliza o texto */
   font-weight: bold; /* Deixa o texto em negrito */
   font-size: 35px; /* Define o tamanho da fonte um pouco maior */
-  margin: 0; /* Remove margens padrão */
-  
+  margin-top: 40px;
 }
 
 
@@ -228,6 +227,7 @@ footer {
   display: flex;
   align-items: center; /* Alinha estrelas e números no centro */
   gap: 5px; /* Espaçamento entre as estrelas e o número */
+  margin-top: -15px;
 }
 
 .star {
@@ -330,3 +330,12 @@ footer {
 
 }
 
+
+.top-selling {
+
+  text-align: center; /* Centraliza o texto */
+  font-weight: bold; /* Deixa o texto em negrito */
+  font-size: 35px; /* Define o tamanho da fonte um pouco maior */
+  margin: 0; /* Remove margens padrão */
+  margin-top: 60px;
+}
