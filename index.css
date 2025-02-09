@@ -2,6 +2,29 @@ body {
     background-color: rgb(245, 241, 241); /* Cor de fundo azul claro */
   }
   
+  .close-x {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 25px;
+    font-weight: bold;
+    color: #b9b9b9;
+    cursor: pointer;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Efeito ao passar o mouse */
+  .close-x:hover {
+    transform: translateY(-50%) scale(1); /* Aumenta de tamanho */
+    color: red; /* Fica vermelho */
+  }
+  
+  /* Efeito ao clicar */
+  .close-x:active {
+    transform: translateY(-50%) scale(0.8); /* Reduz de tamanho ao clicar */
+  }
+
 /* Container geral */
 .shop-container {
     display: flex; /* Flexbox para alinhar os itens horizontalmente */
@@ -207,6 +230,13 @@ footer {
   gap: 40px; /* Espaçamento horizontal e vertical entre as imagens */
 }
 
+.roupas-vendas1 {
+  margin-left: 500px;
+  margin-top: 50px;
+  display: flex; /* Organiza as imagens em uma linha flexível */
+  flex-wrap: wrap; /* Permite que imagens "quebrem" para a linha seguinte se necessário */
+  gap: 60px; /* Espaçamento horizontal e vertical entre as imagens */
+}
 .nome-roupas {
   margin-left: 510px;
   display: flex; /* Organiza as imagens em uma linha flexível */
@@ -215,10 +245,26 @@ footer {
   
 }
 
+.nome-roupas1 {
+  margin-left: 500px;
+  display: flex; /* Organiza as imagens em uma linha flexível */
+  flex-wrap: wrap; /* Permite que imagens "quebrem" para a linha seguinte se necessário */
+  gap: 95px; /* Espaçamento horizontal e vertical entre as imagens */
+  
+}
+
 .rating {
   display: flex; /* Coloca os grupos em uma linha */
   margin-left: 505px;
   gap: 115px; /* Espaçamento entre os grupos */
+  justify-content: start; /* Alinha os grupos à esquerda */
+  align-items: center; /* Alinha verticalmente os grupos */
+}
+
+.rating1 {
+  display: flex; /* Coloca os grupos em uma linha */
+  margin-left: 505px;
+  gap: 130px; /* Espaçamento entre os grupos */
   justify-content: start; /* Alinha os grupos à esquerda */
   align-items: center; /* Alinha verticalmente os grupos */
 }
@@ -286,6 +332,14 @@ footer {
   gap: 200px; /* Espaçamento entre os elementos */
 }
 
+.price-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 505px;
+  margin-top: -20px;
+  gap: 212px; /* Espaçamento entre os elementos */
+}
+
 /* Estilo para os preços principais */
 .price {
   font-size: 18px;
@@ -330,6 +384,12 @@ footer {
 
 }
 
+.preços-descontos2 {
+  display: flex; /* Alinha os itens horizontalmente */
+  gap: 10px;
+  margin-left: 550px;
+  margin-top: -29px;
+}
 
 .top-selling {
 
@@ -338,4 +398,37 @@ footer {
   font-size: 35px; /* Define o tamanho da fonte um pouco maior */
   margin: 0; /* Remove margens padrão */
   margin-top: 60px;
+}
+
+.browse-by-dress-style {
+
+  text-align: center; /* Centraliza o texto */
+  font-weight: bold; /* Deixa o texto em negrito */
+  font-size: 35px; /* Define o tamanho da fonte um pouco maior */
+  margin: 0; /* Remove margens padrão */
+  margin-top: 30px;
+}
+
+.borda-browse-by-dress-style {
+  background-color: #d9d5d5; /* Cinza mais escuro */
+  padding: 30px;
+  border-radius: 15px; /* Bordas arredondadas */
+  text-align: center;
+  display: inline-block;
+  width: 90%; /* Aumenta a largura do container */
+  max-width: 800px; /* Define um limite para não ficar exagerado */
+  margin-left: 500px;
+  margin-top: 70px;
+}
+
+.imagens-do-browse-by-dress-style {
+
+  margin-top: 40px;
+}
+
+.our-happy-costomers {
+  font-weight: bold; /* Deixa o texto em negrito */
+  font-size: 35px; /* Define o tamanho da fonte um pouco maior */
+  margin-top: 40px;
+  margin-left: 495px;
 }
