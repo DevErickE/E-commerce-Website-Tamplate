@@ -1,223 +1,312 @@
 body {
-    background-color: rgb(245, 241, 241); /* Cor de fundo azul claro */
-  }
-  
-  .close-x {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 25px;
-    font-weight: bold;
-    color: #b9b9b9;
-    cursor: pointer;
-    transition: transform 0.3s ease, color 0.3s ease;
-  }
-   
-  /* Efeito ao passar o mouse */
-  .close-x:hover {
-    transform: translateY(-50%) scale(1); /* Aumenta de tamanho */
-    color: red; /* Fica vermelho */
-  }
-  
-  /* Efeito ao clicar */
-  .close-x:active {
-    transform: translateY(-50%) scale(0.8); /* Reduz de tamanho ao clicar */
-  }
+  background-color: rgb(245, 241, 241);
+  /* Cor de fundo azul claro */
+}
+
+.close-x {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 25px;
+  font-weight: bold;
+  color: #b9b9b9;
+  cursor: pointer;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.close-x:hover {
+  transform: translateY(-50%) scale(1);
+  /* Aumenta de tamanho */
+  color: red;
+  /* Fica vermelho */
+}
+
+/* Efeito ao clicar */
+.close-x:active {
+  transform: translateY(-50%) scale(0.8);
+  /* Reduz de tamanho ao clicar */
+}
 
 /* Container geral */
 .shop-container {
-    display: flex; /* Flexbox para alinhar os itens horizontalmente */
-    align-items: center; /* Alinha os itens verticalmente no centro */
-    justify-content: flex-start; /* Alinha à esquerda */
-    width: 100%;
-    margin-left: 100px; /* Move todo o conteúdo para a direita em 50px */
+  display: flex;
+  /* Flexbox para alinhar os itens horizontalmente */
+  align-items: center;
+  /* Alinha os itens verticalmente no centro */
+  justify-content: flex-start;
+  /* Alinha à esquerda */
+  width: 100%;
+  margin-left: 100px;
+  /* Move todo o conteúdo para a direita em 50px */
 
-  }
+}
 
-  /* SHOP.CO à esquerda */
-  .shopco {
-    font-weight: bold;
-    font-size: 30px;
-    color: black;
-    margin-right: 30px; /* Espaço entre o SHOP.CO e os itens ao lado */
-  }
+/* SHOP.CO à esquerda */
+.shopco {
+  font-weight: bold;
+  font-size: 30px;
+  color: black;
+  margin-right: 30px;
+  /* Espaço entre o SHOP.CO e os itens ao lado */
+}
 
-  /* Estilos da barra de navegação */
-  .barradecima {
-    display: flex; /* Flexbox para alinhar os itens na linha */
-    gap: 17px; /* Pequeno espaçamento entre os itens */
-  }
+/* Estilos da barra de navegação */
+.barradecima {
+  display: flex;
+  /* Flexbox para alinhar os itens na linha */
+  gap: 17px;
+  /* Pequeno espaçamento entre os itens */
+}
 
-  /* Estilos para os itens da navegação */
-  .barradecima p {
-    margin: 0; /* Remove margens */
-    font-size: 20px; /* Tamanho da fonte */
-    color: black; /* Cor do texto */
-  }
+/* Estilos para os itens da navegação */
+.barradecima p {
+  margin: 0;
+  /* Remove margens */
+  font-size: 20px;
+  /* Tamanho da fonte */
+  color: black;
+  /* Cor do texto */
+}
 
 
 footer {
-    position: fixed; /* Posiciona o footer de forma fixa */
-    top: 0; /* Fixa no topo */
-    left: 0; /* Garante que comece na borda esquerda da tela */
-    width: 100%; /* Ocupar toda a largura da tela */
-    background-color: #040404; /* Cor de fundo */
-    padding: 10px 0; /* Espaçamento vertical */
-    text-align: center; /* Centraliza o texto */
-    font-size: 16px; /* Tamanho da fonte */
-    color: #b4b0b0; /* Cor do texto */
-    z-index: 1000; /* Garante que o footer apareça sobre outros elementos */
-    box-sizing: border-box; /* Garante que o padding não afete a largura */
-  }
+  position: fixed;
+  /* Posiciona o footer de forma fixa */
+  top: 0;
+  /* Fixa no topo */
+  left: 0;
+  /* Garante que comece na borda esquerda da tela */
+  width: 100%;
+  /* Ocupar toda a largura da tela */
+  background-color: #040404;
+  /* Cor de fundo */
+  padding: 10px 0;
+  /* Espaçamento vertical */
+  text-align: center;
+  /* Centraliza o texto */
+  font-size: 16px;
+  /* Tamanho da fonte */
+  color: #b4b0b0;
+  /* Cor do texto */
+  z-index: 1000;
+  /* Garante que o footer apareça sobre outros elementos */
+  box-sizing: border-box;
+  /* Garante que o padding não afete a largura */
+}
 
-  footer p {
-    margin: 0; /* Remove margens padrão do parágrafo */
-  }
+footer p {
+  margin: 0;
+  /* Remove margens padrão do parágrafo */
+}
 
-  .negrito {
-    font-weight: bold; /* Texto em negrito */
-    color: #ffffff; /* Cor azul para o link */
-    text-decoration: none; /* Remove sublinhado do link */
-  }
+.negrito {
+  font-weight: bold;
+  /* Texto em negrito */
+  color: #ffffff;
+  /* Cor azul para o link */
+  text-decoration: none;
+  /* Remove sublinhado do link */
+}
 
-  .negrito:hover {
-    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
-  }
+.negrito:hover {
+  text-decoration: underline;
+  /* Adiciona sublinhado ao passar o mouse */
+}
 
 
 .text-container {
-    text-align: left; /* Alinha o texto à esquerda */
-    font-size: 48px; /* Tamanho grande para as letras */
-    line-height: 1.2; /* Espaçamento entre as linhas */
-    color: black; /* Cor do texto */
-    margin: 0;
-    padding: 0;
-    margin-left: 100px; /* Move todo o conteúdo para a direita em 50px */
+  text-align: left;
+  /* Alinha o texto à esquerda */
+  font-size: 48px;
+  /* Tamanho grande para as letras */
+  line-height: 1.2;
+  /* Espaçamento entre as linhas */
+  color: black;
+  /* Cor do texto */
+  margin: 0;
+  padding: 0;
+  margin-left: 100px;
+  /* Move todo o conteúdo para a direita em 50px */
 
-  }
+}
 
-  .text-container p {
-    margin: 0;  
-    font-weight: 900; /* Máxima espessura do peso */
-    font-family: Arial Black, sans-serif; /* Fonte com traço grosso */
-    -webkit-text-stroke: 1px black; /* Contorno no texto para aumentar a espessura */
-    color: black; /* Preenche o texto com preto */
-  }
+.text-container p {
+  margin: 0;
+  font-weight: 900;
+  /* Máxima espessura do peso */
+  font-family: Arial Black, sans-serif;
+  /* Fonte com traço grosso */
+  -webkit-text-stroke: 1px black;
+  /* Contorno no texto para aumentar a espessura */
+  color: black;
+  /* Preenche o texto com preto */
+}
 
-  .text-paragraph {
-    text-align: left; /* Alinha o texto à esquerda */
-    color: #848282; /* Tom cinza claro */
-    font-size: 16px; /* Mantém o tamanho original (ajustável conforme necessário) */
-    line-height: 1.5; /* Espaçamento entre linhas */
-    max-width: 600px; /* Define uma largura máxima para melhor legibilidade */
-    margin: 0; /* Remove margens extras */
-    margin-left: 110px;
-  }
+.text-paragraph {
+  text-align: left;
+  /* Alinha o texto à esquerda */
+  color: #848282;
+  /* Tom cinza claro */
+  font-size: 16px;
+  /* Mantém o tamanho original (ajustável conforme necessário) */
+  line-height: 1.5;
+  /* Espaçamento entre linhas */
+  max-width: 600px;
+  /* Define uma largura máxima para melhor legibilidade */
+  margin: 0;
+  /* Remove margens extras */
+  margin-left: 110px;
+}
 
-  .shop-button {
-    display: inline-block; /* Permite que o botão tenha tamanho ajustável */
-    padding: 15px 30px; /* Aumenta o tamanho do botão sem afetar o texto */
-    background-color: black; /* Cor de fundo preta */
-    color: white; /* Cor do texto branca */
-    font-size: 16px; /* Tamanho da fonte (não muda) */
-    font-weight: bold; /* Texto em negrito */
-    text-align: center; /* Centraliza o texto */
-    text-decoration: none; /* Remove sublinhado, caso seja usado em links */
-    border: none; /* Remove bordas padrão */
-    border-radius: 20px; /* Torna as bordas arredondadas */
-    cursor: pointer; /* Mostra o ícone de "mão" no hover */
-    transition: background-color 0.3s ease; /* Animação suave para hover */
-    margin-left: 110px;
-    width: 110px;
-  }
-  
-  .shop-button:hover {
-    background-color: #333; /* Fundo cinza escuro no hover */
-  }
-  
+.shop-button {
+  display: inline-block;
+  /* Permite que o botão tenha tamanho ajustável */
+  padding: 15px 30px;
+  /* Aumenta o tamanho do botão sem afetar o texto */
+  background-color: black;
+  /* Cor de fundo preta */
+  color: white;
+  /* Cor do texto branca */
+  font-size: 16px;
+  /* Tamanho da fonte (não muda) */
+  font-weight: bold;
+  /* Texto em negrito */
+  text-align: center;
+  /* Centraliza o texto */
+  text-decoration: none;
+  /* Remove sublinhado, caso seja usado em links */
+  border: none;
+  /* Remove bordas padrão */
+  border-radius: 20px;
+  /* Torna as bordas arredondadas */
+  cursor: pointer;
+  /* Mostra o ícone de "mão" no hover */
+  transition: background-color 0.3s ease;
+  /* Animação suave para hover */
+  margin-left: 110px;
+  width: 110px;
+}
+
+.shop-button:hover {
+  background-color: #333;
+  /* Fundo cinza escuro no hover */
+}
+
 
 .stats-container {
-    display: flex;
-    gap: 40px; /* Espaçamento entre os blocos */
-    justify-content: center; /* Centralizar os blocos horizontalmente */
-    align-items: center; /* Alinhar os blocos verticalmente */
-    margin-right: 1200px;
-  }
+  display: flex;
+  gap: 40px;
+  /* Espaçamento entre os blocos */
+  justify-content: center;
+  /* Centralizar os blocos horizontalmente */
+  align-items: center;
+  /* Alinhar os blocos verticalmente */
+  margin-right: 1200px;
+}
 
-  .stat-item {
-    text-align: left; /* Centralizar o texto dentro do bloco */
-  }
+.stat-item {
+  text-align: left;
+  /* Centralizar o texto dentro do bloco */
+}
 
-  .stat-item p:first-child {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0; /* Remove margens padrão */
-  }
+.stat-item p:first-child {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  /* Remove margens padrão */
+}
 
-  .stat-item p:last-child {
-    font-size: 16px;
-    margin: 5px 0 0 0; /* Pequeno espaçamento acima */
-    color: #555; /* Cor do texto (opcional) */
-  }
+.stat-item p:last-child {
+  font-size: 16px;
+  margin: 5px 0 0 0;
+  /* Pequeno espaçamento acima */
+  color: #555;
+  /* Cor do texto (opcional) */
+}
 
- .pesquisa {
-      padding: 8px 12px;
-      font-size: 16px;
-      border: 1px solid #ccc; /* Borda leve */
-      border-radius: 25px; /* Borda arredondada */
-      margin-left: 50px; /* Espaçamento à esquerda do campo de pesquisa */
-      height: 35px;
-      transition: all 0.3s ease; /* Transição suave ao interagir */
-      width: 800px;
-    }
+.pesquisa {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  /* Borda leve */
+  border-radius: 25px;
+  /* Borda arredondada */
+  margin-left: 50px;
+  /* Espaçamento à esquerda do campo de pesquisa */
+  height: 35px;
+  transition: all 0.3s ease;
+  /* Transição suave ao interagir */
+  width: 800px;
+}
 
-    /* Estilo para o foco do campo de pesquisa */
-    .pesquisa:focus {
-      border-color: #007bff; /* Altera a cor da borda ao focar */
-      outline: none; /* Remove o contorno padrão do navegador */
-    }
+/* Estilo para o foco do campo de pesquisa */
+.pesquisa:focus {
+  border-color: #007bff;
+  /* Altera a cor da borda ao focar */
+  outline: none;
+  /* Remove o contorno padrão do navegador */
+}
 
-    .image_roupas {
+.image_roupas {
 
-        margin-left: 700px;
-        margin-top: -350px;
-    }
+  margin-left: 700px;
+  margin-top: -350px;
+}
 
-    /* Estilo para a linha preta que ocupa a largura total da página */
+/* Estilo para a linha preta que ocupa a largura total da página */
 .linha-marcas {
-  background-color: black; /* Cor de fundo preta */
-  color: white; /* Cor do texto branca */
-  text-align: center; /* Alinha o texto no centro */
-  width: 100%; /* Garante que ocupe toda a largura da página */
-  position: relative; /* Necessário para posicionar elementos internos corretamente */
-  padding: 20px 0; /* Espaçamento dentro da linha preta */
-  box-sizing: border-box; /* Faz com que o padding não afete a largura total */
+  background-color: black;
+  /* Cor de fundo preta */
+  color: white;
+  /* Cor do texto branca */
+  text-align: center;
+  /* Alinha o texto no centro */
+  width: 100%;
+  /* Garante que ocupe toda a largura da página */
+  position: relative;
+  /* Necessário para posicionar elementos internos corretamente */
+  padding: 20px 0;
+  /* Espaçamento dentro da linha preta */
+  box-sizing: border-box;
+  /* Faz com que o padding não afete a largura total */
 }
 
 /* Flexbox para as marcas ficarem lado a lado */
 .marcas_famosas {
-  display: flex; /* Habilita o modelo de layout flexbox */
-  justify-content: center; /* Centraliza as marcas horizontalmente */
-  gap: 40px; /* Espaço entre as marcas */
-  flex-wrap: wrap; /* Permite que as marcas quebrem para a linha seguinte, se necessário */
+  display: flex;
+  /* Habilita o modelo de layout flexbox */
+  justify-content: center;
+  /* Centraliza as marcas horizontalmente */
+  gap: 40px;
+  /* Espaço entre as marcas */
+  flex-wrap: wrap;
+  /* Permite que as marcas quebrem para a linha seguinte, se necessário */
 }
 
 .marcas_famosas p {
-  font-size: 30px; /* Aumenta o tamanho da fonte */
-  font-weight: bold; /* Texto em negrito */
-  margin: 0; /* Remove as margens padrão dos parágrafos */
+  font-size: 30px;
+  /* Aumenta o tamanho da fonte */
+  font-weight: bold;
+  /* Texto em negrito */
+  margin: 0;
+  /* Remove as margens padrão dos parágrafos */
 }
 
 /* Efeito ao passar o mouse */
 .marcas_famosas p:hover {
-  text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+  text-decoration: underline;
+  /* Adiciona sublinhado ao passar o mouse */
 }
 
 .new-arrivals {
-  text-align: center; /* Centraliza o texto */
-  font-weight: bold; /* Deixa o texto em negrito */
-  font-size: 35px; /* Define o tamanho da fonte um pouco maior */
+  text-align: center;
+  /* Centraliza o texto */
+  font-weight: bold;
+  /* Deixa o texto em negrito */
+  font-size: 35px;
+  /* Define o tamanho da fonte um pouco maior */
   margin-top: 40px;
 }
 
@@ -225,48 +314,69 @@ footer {
 .roupas-vendas {
   margin-left: 500px;
   margin-top: 50px;
-  display: flex; /* Organiza as imagens em uma linha flexível */
-  flex-wrap: wrap; /* Permite que imagens "quebrem" para a linha seguinte se necessário */
-  gap: 40px; /* Espaçamento horizontal e vertical entre as imagens */
+  display: flex;
+  /* Organiza as imagens em uma linha flexível */
+  flex-wrap: wrap;
+  /* Permite que imagens "quebrem" para a linha seguinte se necessário */
+  gap: 40px;
+  /* Espaçamento horizontal e vertical entre as imagens */
 }
 
 .roupas-vendas1 {
   margin-left: 500px;
   margin-top: 50px;
-  display: flex; /* Organiza as imagens em uma linha flexível */
-  flex-wrap: wrap; /* Permite que imagens "quebrem" para a linha seguinte se necessário */
-  gap: 60px; /* Espaçamento horizontal e vertical entre as imagens */
+  display: flex;
+  /* Organiza as imagens em uma linha flexível */
+  flex-wrap: wrap;
+  /* Permite que imagens "quebrem" para a linha seguinte se necessário */
+  gap: 60px;
+  /* Espaçamento horizontal e vertical entre as imagens */
 }
+
 .nome-roupas {
   margin-left: 510px;
-  display: flex; /* Organiza as imagens em uma linha flexível */
-  flex-wrap: wrap; /* Permite que imagens "quebrem" para a linha seguinte se necessário */
-  gap: 97px; /* Espaçamento horizontal e vertical entre as imagens */
-  
+  display: flex;
+  /* Organiza as imagens em uma linha flexível */
+  flex-wrap: wrap;
+  /* Permite que imagens "quebrem" para a linha seguinte se necessário */
+  gap: 97px;
+  /* Espaçamento horizontal e vertical entre as imagens */
+
 }
 
 .nome-roupas1 {
   margin-left: 500px;
-  display: flex; /* Organiza as imagens em uma linha flexível */
-  flex-wrap: wrap; /* Permite que imagens "quebrem" para a linha seguinte se necessário */
-  gap: 95px; /* Espaçamento horizontal e vertical entre as imagens */
-  
+  display: flex;
+  /* Organiza as imagens em uma linha flexível */
+  flex-wrap: wrap;
+  /* Permite que imagens "quebrem" para a linha seguinte se necessário */
+  gap: 95px;
+  /* Espaçamento horizontal e vertical entre as imagens */
+
 }
 
 .rating {
-  display: flex; /* Coloca os grupos em uma linha */
+  display: flex;
+  /* Coloca os grupos em uma linha */
   margin-left: 505px;
-  gap: 115px; /* Espaçamento entre os grupos */
-  justify-content: start; /* Alinha os grupos à esquerda */
-  align-items: center; /* Alinha verticalmente os grupos */
+  gap: 115px;
+  /* Espaçamento entre os grupos */
+  justify-content: start;
+  /* Alinha os grupos à esquerda */
+  align-items: center;
+  /* Alinha verticalmente os grupos */
 }
 
 .rating1 {
-  display: flex; /* Coloca os grupos em uma linha */
+  display: flex;
+  /* Coloca os grupos em uma linha */
   margin-left: 505px;
-  gap: 130px; /* Espaçamento entre os grupos */
-  justify-content: start; /* Alinha os grupos à esquerda */
-  align-items: center; /* Alinha verticalmente os grupos */
+  gap: 130px;
+  /* Espaçamento entre os grupos */
+  justify-content: start;
+  /* Alinha os grupos à esquerda */
+  align-items: center;
+  /* Alinha verticalmente os grupos */
 }
 
 .rating2 {
@@ -280,15 +390,19 @@ footer {
 
 .stars-group {
   display: flex;
-  align-items: center; /* Alinha estrelas e números no centro */
-  gap: 5px; /* Espaçamento entre as estrelas e o número */
+  align-items: center;
+  /* Alinha estrelas e números no centro */
+  gap: 5px;
+  /* Espaçamento entre as estrelas e o número */
   margin-top: -15px;
 }
 
 .stars-group1 {
   display: flex;
-  align-items: center; /* Alinha estrelas e números no centro */
-  gap: 5px; /* Espaçamento entre as estrelas e o número */
+  align-items: center;
+  /* Alinha estrelas e números no centro */
+  gap: 5px;
+  /* Espaçamento entre as estrelas e o número */
   margin-top: 5px;
   margin-left: 92px;
 }
@@ -296,17 +410,17 @@ footer {
 
 .star {
   display: inline-block;
-  width: 15px; /* Tamanho menor das estrelas */
+  width: 15px;
+  /* Tamanho menor das estrelas */
   height: 15px;
   background-color: transparent;
-  clip-path: polygon(
-    50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
-    50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%
-  );
+  clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%,
+      50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
 }
 
 .star.full {
-  background-color: gold; /* Estrela preenchida */
+  background-color: gold;
+  /* Estrela preenchida */
 }
 
 .star.half {
@@ -314,31 +428,45 @@ footer {
 }
 
 .rating-number {
-  font-size: 10.5px; /* Tamanho do número */
+  font-size: 10.5px;
+  /* Tamanho do número */
   font-weight: bold;
   color: #333;
 }
 
 
 .view-all-button {
-  display: inline-block; /* Torna o elemento clicável como um botão */
-  padding: 5px 10px; /* Adiciona um pouco de espaçamento interno */
-  font-size: 12px; /* Letras bem pequenas */
-  font-weight: bold; /* Coloca o texto em negrito */
-  color: rgba(0, 0, 0, 0.6); /* Texto com claridade baixa (cinza claro) */
-  background-color: rgba(0, 0, 0, 0.1); /* Fundo com claridade baixa */
-  border: none; /* Sem borda */
-  border-radius: 5px; /* Bordas levemente arredondadas */
-  text-align: center; /* Centraliza o texto */
-  cursor: pointer; /* Mostra o ícone de mão no hover */
-  transition: all 0.3s ease; /* Transição suave ao passar o mouse */
+  display: inline-block;
+  /* Torna o elemento clicável como um botão */
+  padding: 5px 10px;
+  /* Adiciona um pouco de espaçamento interno */
+  font-size: 12px;
+  /* Letras bem pequenas */
+  font-weight: bold;
+  /* Coloca o texto em negrito */
+  color: rgba(0, 0, 0, 0.6);
+  /* Texto com claridade baixa (cinza claro) */
+  background-color: rgba(0, 0, 0, 0.1);
+  /* Fundo com claridade baixa */
+  border: none;
+  /* Sem borda */
+  border-radius: 5px;
+  /* Bordas levemente arredondadas */
+  text-align: center;
+  /* Centraliza o texto */
+  cursor: pointer;
+  /* Mostra o ícone de mão no hover */
+  transition: all 0.3s ease;
+  /* Transição suave ao passar o mouse */
   justify-content: center;
   margin-left: 890px;
 }
 
 .view-all-button:hover {
-  background-color: rgba(0, 0, 0, 0.2); /* Fundo ligeiramente mais escuro no hover */
-  color: rgba(0, 0, 0, 0.8); /* Texto um pouco mais escuro no hover */
+  background-color: rgba(0, 0, 0, 0.2);
+  /* Fundo ligeiramente mais escuro no hover */
+  color: rgba(0, 0, 0, 0.8);
+  /* Texto um pouco mais escuro no hover */
 }
 
 /* Contêiner para organizar os preços */
@@ -347,7 +475,8 @@ footer {
   flex-wrap: wrap;
   margin-left: 505px;
   margin-top: -20px;
-  gap: 200px; /* Espaçamento entre os elementos */
+  gap: 200px;
+  /* Espaçamento entre os elementos */
 }
 
 .price-container1 {
@@ -355,7 +484,8 @@ footer {
   flex-wrap: wrap;
   margin-left: 505px;
   margin-top: -20px;
-  gap: 212px; /* Espaçamento entre os elementos */
+  gap: 212px;
+  /* Espaçamento entre os elementos */
 }
 
 /* Estilo para os preços principais */
@@ -366,11 +496,16 @@ footer {
 
 /* Estilo para a porcentagem de desconto */
 .discount {
-  color: rgb(250, 52, 52); /* Cor do texto */
-  background-color: rgba(255, 0, 0, 0.1); /* Vermelho bem claro */
-  border: 2px solid #fdd4d4; /* Borda vermelha fraca, aumentando a espessura */
-  padding: 5px 10px; /* Aumentando o espaçamento interno */
-  border-radius: 20px; /* Borda arredondada, aumentando o raio */
+  color: rgb(250, 52, 52);
+  /* Cor do texto */
+  background-color: rgba(255, 0, 0, 0.1);
+  /* Vermelho bem claro */
+  border: 2px solid #fdd4d4;
+  /* Borda vermelha fraca, aumentando a espessura */
+  padding: 5px 10px;
+  /* Aumentando o espaçamento interno */
+  border-radius: 20px;
+  /* Borda arredondada, aumentando o raio */
   font-size: 10px;
   margin-top: -12px;
   margin-bottom: 20px;
@@ -381,21 +516,25 @@ footer {
 /* Preços com descontos */
 .discounted {
   text-decoration: line-through;
-  color: #808080; /* Cor cinza clara para o preço riscado */
-  font-size: 18px; /* Tamanho de fonte igual aos outros preços */
+  color: #808080;
+  /* Cor cinza clara para o preço riscado */
+  font-size: 18px;
+  /* Tamanho de fonte igual aos outros preços */
   margin-top: -10px;
-  
+
 }
 
 .preços-descontos {
-  display: flex; /* Alinha os itens horizontalmente */
+  display: flex;
+  /* Alinha os itens horizontalmente */
   gap: 10px;
   margin-left: 790px;
   margin-top: -29px;
 }
 
 .preços-descontos1 {
-  display: flex; /* Alinha os itens horizontalmente */
+  display: flex;
+  /* Alinha os itens horizontalmente */
   gap: 10px;
   margin-left: 1260px;
   margin-top: -33px;
@@ -403,7 +542,8 @@ footer {
 }
 
 .preços-descontos2 {
-  display: flex; /* Alinha os itens horizontalmente */
+  display: flex;
+  /* Alinha os itens horizontalmente */
   gap: 10px;
   margin-left: 550px;
   margin-top: -29px;
@@ -411,30 +551,42 @@ footer {
 
 .top-selling {
 
-  text-align: center; /* Centraliza o texto */
-  font-weight: bold; /* Deixa o texto em negrito */
-  font-size: 35px; /* Define o tamanho da fonte um pouco maior */
-  margin: 0; /* Remove margens padrão */
+  text-align: center;
+  /* Centraliza o texto */
+  font-weight: bold;
+  /* Deixa o texto em negrito */
+  font-size: 35px;
+  /* Define o tamanho da fonte um pouco maior */
+  margin: 0;
+  /* Remove margens padrão */
   margin-top: 60px;
 }
 
 .browse-by-dress-style {
 
-  text-align: center; /* Centraliza o texto */
-  font-weight: bold; /* Deixa o texto em negrito */
-  font-size: 35px; /* Define o tamanho da fonte um pouco maior */
-  margin: 0; /* Remove margens padrão */
+  text-align: center;
+  /* Centraliza o texto */
+  font-weight: bold;
+  /* Deixa o texto em negrito */
+  font-size: 35px;
+  /* Define o tamanho da fonte um pouco maior */
+  margin: 0;
+  /* Remove margens padrão */
   margin-top: 30px;
 }
 
 .borda-browse-by-dress-style {
-  background-color: #d9d5d5; /* Cinza mais escuro */
+  background-color: #d9d5d5;
+  /* Cinza mais escuro */
   padding: 30px;
-  border-radius: 15px; /* Bordas arredondadas */
+  border-radius: 15px;
+  /* Bordas arredondadas */
   text-align: center;
   display: inline-block;
-  width: 90%; /* Aumenta a largura do container */
-  max-width: 800px; /* Define um limite para não ficar exagerado */
+  width: 90%;
+  /* Aumenta a largura do container */
+  max-width: 800px;
+  /* Define um limite para não ficar exagerado */
   margin-left: 500px;
   margin-top: 70px;
 }
@@ -444,23 +596,30 @@ footer {
   margin-top: 40px;
 }
 
-.our-happy-costomers{ 
+.our-happy-costomers {
 
-  text-align: center; /* Centraliza o texto */
-  font-weight: bold; /* Deixa o texto em negrito */
-  font-size: 35px; /* Define o tamanho da fonte um pouco maior */
+  text-align: center;
+  /* Centraliza o texto */
+  font-weight: bold;
+  /* Deixa o texto em negrito */
+  font-size: 35px;
+  /* Define o tamanho da fonte um pouco maior */
   margin-left: -500px;
   margin-top: 60px;
 }
 
 .arrow-container {
   position: absolute;
-  right: 470px; /* Ajuste para mover para o lado esquerdo da tela */
-  margin-top: -60px; /* Ajuste essa propriedade para mover as setas verticalmente */
+  right: 470px;
+  /* Ajuste para mover para o lado esquerdo da tela */
+  margin-top: -60px;
+  /* Ajuste essa propriedade para mover as setas verticalmente */
   display: flex;
   gap: 15px;
-  font-size: 28px; /* Setas maiores */
-  font-weight: 900; /* Negrito bem forte */
+  font-size: 28px;
+  /* Setas maiores */
+  font-weight: 900;
+  /* Negrito bem forte */
 }
 
 .arrow {
@@ -469,12 +628,14 @@ footer {
 }
 
 .arrow:hover {
-  transform: scale(1.3); /* Pequeno aumento ao passar o mouse */
+  transform: scale(1.3);
+  /* Pequeno aumento ao passar o mouse */
   color: gray;
 }
 
 .arrow:active {
-  transform: scale(0.9); /* Pequeno efeito ao clicar */
+  transform: scale(0.9);
+  /* Pequeno efeito ao clicar */
   color: black;
 }
 
@@ -483,16 +644,20 @@ footer {
 .group-opinions {
   display: flex;
   justify-content: center;
-  gap: 10px; /* Bordas mais próximas */
+  gap: 10px;
+  /* Bordas mais próximas */
   flex-wrap: wrap;
   padding: 20px;
 }
 
 .opinion-box {
-  background-color: white; /* Fundo branco */
+  background-color: white;
+  /* Fundo branco */
   padding: 15px;
-  border-radius: 15px; /* Bordas arredondadas */
-  box-shadow: 0px 0px 0px 2px black; /* Apenas um risco preto na borda */
+  border-radius: 15px;
+  /* Bordas arredondadas */
+  box-shadow: 0px 0px 0px 2px black;
+  /* Apenas um risco preto na borda */
   max-width: 280px;
   text-align: center;
   transition: transform 0.3s ease-in-out;
@@ -501,7 +666,8 @@ footer {
 
 /* Efeito ao passar o mouse */
 .opinion-box:hover {
-  transform: translateY(-5px); /* Dá um leve efeito de levantar */
+  transform: translateY(-5px);
+  /* Dá um leve efeito de levantar */
 }
 
 /* Nome da pessoa */
@@ -518,7 +684,8 @@ footer {
 .verified {
   width: 18px;
   height: 18px;
-  background-color: #2ecc71; /* Verde */
+  background-color: #2ecc71;
+  /* Verde */
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -541,47 +708,59 @@ footer {
 }
 
 .custom-footer-like {
-  background-color: black; /* Fundo preto */
-  border: 2px solid black; /* Borda preta em volta do bloco */
-  padding: 20px 20px; /* Garantir que o padding seja igual em cima e embaixo */
+  background-color: black;
+  /* Fundo preto */
+  border: 2px solid black;
+  /* Borda preta em volta do bloco */
+  padding: 20px 20px;
+  /* Garantir que o padding seja igual em cima e embaixo */
   display: flex;
-  justify-content: space-between; /* Faz o conteúdo se espalhar */
+  justify-content: space-between;
+  /* Faz o conteúdo se espalhar */
   align-items: center;
   max-width: 950px;
   margin: 30px auto;
-  border-radius: 10px; /* Bordas arredondadas */
-  height: 100px; /* A altura permanece a mesma */
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  height: 100px;
+  /* A altura permanece a mesma */
 }
 
 
 .latest-offers {
   color: white;
   font-weight: bold;
-  font-size: 36px; /* Tamanho maior da fonte */
-  margin-bottom: 20px; /* Espaço entre o texto e o campo de email */
+  font-size: 36px;
+  /* Tamanho maior da fonte */
+  margin-bottom: 20px;
+  /* Espaço entre o texto e o campo de email */
 }
 
 
 .email-container {
   display: flex;
   align-items: center;
-  gap: 10px; /* Espaço entre o campo de email e o botão */
+  gap: 10px;
+  /* Espaço entre o campo de email e o botão */
 }
 
 .email-input-container {
   display: flex;
   align-items: center;
-  border: 2px solid white; /* Borda branca para o campo de email */
+  border: 2px solid white;
+  /* Borda branca para o campo de email */
   padding: 5px;
   border-radius: 20px;
-  margin-top: -30px; /* Ajuste o valor conforme necessário para mover o campo para cima */
+  margin-top: -30px;
+  /* Ajuste o valor conforme necessário para mover o campo para cima */
 }
 
 
 .email-icon {
   font-size: 18px;
   margin-right: 10px;
-  color: white; /* Cor do ícone de email */
+  color: white;
+  /* Cor do ícone de email */
 }
 
 .email-input {
@@ -590,25 +769,29 @@ footer {
   padding: 5px;
   font-size: 12px;
   width: 250px;
-  color: black; /* Cor do texto do input */
+  color: black;
+  /* Cor do texto do input */
 }
 
 .subscribe-btn {
   background-color: white;
   color: black;
   border: none;
-  padding: 10px 75px; /* Menor preenchimento */
+  padding: 10px 75px;
+  /* Menor preenchimento */
   border-radius: 15px;
   cursor: pointer;
   font-weight: bold;
-  white-space: nowrap; /* Impede que o texto quebre em várias linhas */
-  display: inline-block; /* Permite o uso de margin-top e margin-left */
-  margin-top: 75px; /* Exemplo de margin-top */
-  margin-left: -310px; /* Exemplo de margin-left */
+  white-space: nowrap;
+  /* Impede que o texto quebre em várias linhas */
+  display: inline-block;
+  /* Permite o uso de margin-top e margin-left */
+  margin-top: 75px;
+  /* Exemplo de margin-top */
+  margin-left: -310px;
+  /* Exemplo de margin-left */
 }
 
 .subscribe-btn:hover {
   background-color: #f0f0f0;
 }
-
-
