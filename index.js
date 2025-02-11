@@ -13,9 +13,9 @@ function validateEmail() {
 
     // Verificar se o email corresponde ao padrão
     if (!emailPattern.test(email) || email === "") {
-        errorMessage.textContent = "Por favor, insira um endereço de email válido!";
         errorMessage.style.color = "red"; // Mensagem vermelha de erro
         emailInput.style.border = "2px solid red"; // Borda vermelha para indicar erro
+        alert("Por favor, insira um email válido!");
     } else {
         errorMessage.textContent = "Email válido!";
         errorMessage.style.color = "green"; // Mensagem verde de sucesso
