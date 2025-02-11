@@ -249,6 +249,29 @@ footer p {
   /* Remove o contorno padrão do navegador */
 }
 
+.icon-container {
+  display: flex;
+  gap: 25px;
+  position: absolute;
+  right: 200px;
+  left: auto; /* Adiciona esta linha para garantir que o container de ícones tenha sua posição definida */
+  margin-left: 0;
+}
+
+.icon-container i {
+  font-size: 18px; /* Ícones menores */
+  cursor: pointer;
+}
+
+.icon-container i.carrinho {
+  content: '\f07a'; /* Código do ícone de carrinho do Font Awesome */
+}
+
+.icon-container i.perfil {
+  content: '\f007'; /* Código do ícone de perfil do Font Awesome */
+}
+
+
 .image_roupas {
 
   margin-left: 700px;
