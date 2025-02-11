@@ -818,3 +818,29 @@ footer p {
 .subscribe-btn:hover {
   background-color: #f0f0f0;
 }
+
+/* Estilo das mensagens de erro e sucesso */
+#message {
+  margin-top: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+}
+
+/* Mensagem de erro (email inválido) */
+#message.error {
+  color: red;
+  background-color: #f8d7da;
+  border: 1px solid #f5c6cb;
+}
+
+/* Mensagem de sucesso (email válido) */
+#message.success {
+  color: green;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+}

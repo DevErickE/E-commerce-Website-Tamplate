@@ -297,11 +297,15 @@
     <div class="email-container">
       <div class="email-input-container">
         <span class="email-icon">&#9993;</span>
-        <input type="email" placeholder="Enter your email address" class="email-input" />
+        <input type="email" placeholder="Enter your email address" class="email-input" id="email" />
       </div>
-      <button class="subscribe-btn">Subscribe to Newsletter</button>
+      <button class="subscribe-btn" onclick="validateEmail()">Subscribe to Newsletter</button>
     </div>
-  </div>
+</div>
+<p id="error-message" style="color: red;"></p>
+
+
+
 
 </body>
 
