@@ -615,8 +615,13 @@ footer p {
 }
 
 .imagens-do-browse-by-dress-style {
-
   margin-top: 40px;
+  
+}
+
+.imagens-do-browse-by-dress-style img {
+  border-radius: 20px; /* Arredonda os cantos */
+  padding: 5px; /* Adiciona um pequeno espaçamento interno */
 }
 
 .our-happy-costomers {
@@ -679,7 +684,7 @@ footer p {
   padding: 15px;
   border-radius: 15px;
   /* Bordas arredondadas */
-  box-shadow: 0px 0px 0px 2px black;
+  box-shadow: 0px 0px 0px 2px rgb(211, 210, 210);
   /* Apenas um risco preto na borda */
   max-width: 280px;
   text-align: center;
@@ -843,4 +848,95 @@ footer p {
   color: green;
   background-color: #d4edda;
   border: 1px solid #c3e6cb;
+}
+
+/* Estilos padrão para desktop (já existentes no seu CSS) */
+
+/* Ajustes para tablets (telas menores que 1024px) */
+@media (max-width: 1024px) {
+  body {
+    font-size: 16px;
+  }
+  .container {
+    width: 90%;
+  }
+}
+
+/* Ajustes para celulares (telas menores que 768px) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+  .menu {
+    display: block; /* Transforma menu em um layout mais simples */
+  }
+}
+
+/* Ajustes para telas muito pequenas (menos de 480px) */
+@media (max-width: 480px) {
+  body {
+    font-size: 12px;
+  }
+  .container {
+    padding: 5px;
+  }
+  .menu {
+    font-size: 14px;
+  }
+}
+
+
+.firstcolumn p {
+  margin: 0;
+  margin-bottom: 20px; /* Reduz o espaçamento entre parágrafos */
+  color: var(--lightblack);
+  font-size: 14px;
+}
+
+.first-column-title {
+  font-family: "Integral CF Bold", serif;
+  font-size: 30px; /* Reduz ligeiramente o tamanho da fonte */
+  font-weight: 800;
+  margin: 0;
+  padding-bottom: 15px; /* Reduz o espaço abaixo do título */
+}
+
+.links-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px; /* Reduz a margem inferior */
+  gap: 3px; /* Diminui ainda mais a distância entre os links */
+}
+
+.social a {
+  margin-right: 2px; /* Reduz ainda mais o espaçamento entre os itens dentro do .social */
+}
+
+.underline {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--lightblack);
+}
+
+.underline .cardslogo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 3px; /* Diminui o espaçamento entre os itens dentro do .cardslogo */
+}
+
+.margem_das_info {
+  margin-left: 440px; /* Reduz a margem esquerda para aproximar o conteúdo */
+  margin-right: 440px;
+}
+
+.links_uteis {
+
+  color:#555;
+  text-decoration: none; /* Remove o sublinhado */
 }
