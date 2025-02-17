@@ -23,3 +23,39 @@ function validateEmail() {
         alert("Você se inscreveu com sucesso!");
     }
 }
+
+document.addEventListener("DOMContentLoaded", function () {
+    const opinionContainer = document.querySelector(".group-opinions");
+    const opinions = document.querySelectorAll(".opinion-box");
+    const leftArrow = document.querySelector(".arrow-container .arrow:first-child");
+    const rightArrow = document.querySelector(".arrow-container .arrow:last-child");
+
+    let currentIndex = 0;
+    const visibleOpinions = 3; // Quantidade de opiniões visíveis
+
+    function updateOpinions() {
+        opinions.forEach((opinion, index) => {
+            if (index >= currentIndex && index < currentIndex + visibleOpinions) {
+                opinion.style.display = "block";
+            } else {
+                opinion.style.display = "none";
+            }
+        });
+    }
+
+    leftArrow.addEventListener("click", function () {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateOpinions();
+        }
+    });
+
+    rightArrow.addEventListener("click", function () {
+        if (currentIndex < opinions.length - visibleOpinions) {
+            currentIndex++;
+            updateOpinions();
+        }
+    });
+
+    updateOpinions(); // Inicializa com os três primeiros visíveis
+});
