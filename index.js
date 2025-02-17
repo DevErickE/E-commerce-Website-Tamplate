@@ -31,7 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const rightArrow = document.querySelector(".arrow-container .arrow:last-child");
 
     let currentIndex = 0;
-    const visibleOpinions = 3; // Quantidade de opiniões visíveis
+    const visibleOpinions = 3; // Número de opiniões visíveis
 
     function updateOpinions() {
         opinions.forEach((opinion, index) => {
@@ -44,17 +44,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     leftArrow.addEventListener("click", function () {
-        if (currentIndex > 0) {
+        if (currentIndex === 0) {
+            currentIndex = opinions.length - visibleOpinions; // Volta para o final
+        } else {
             currentIndex--;
-            updateOpinions();
         }
+        updateOpinions();
     });
 
     rightArrow.addEventListener("click", function () {
-        if (currentIndex < opinions.length - visibleOpinions) {
+        if (currentIndex >= opinions.length - visibleOpinions) {
+            currentIndex = 0; // Volta para o começo
+        } else {
             currentIndex++;
-            updateOpinions();
         }
+        updateOpinions();
     });
 
     updateOpinions(); // Inicializa com os três primeiros visíveis
