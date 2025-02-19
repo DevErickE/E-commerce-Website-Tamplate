@@ -70,3 +70,11 @@ document.addEventListener("DOMContentLoaded", function () {
         footer.classList.add("hide"); // Adiciona a classe para esconder o footer
     });
 });
+
+
+document.querySelector('.negrito').addEventListener('click', function (event) {
+    event.preventDefault(); // Impede o comportamento padrão do link
+    document.querySelector('#signup-section').scrollIntoView({
+        behavior: 'smooth' // Faz a rolagem suave
+    });
+});
