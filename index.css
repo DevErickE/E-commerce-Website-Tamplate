@@ -354,6 +354,13 @@ footer p {
   /* Espaçamento horizontal e vertical entre as imagens */
 }
 
+.roupas-vendas img {
+  transition: transform 0.3s ease-in-out; /* Transição suave */
+}
+
+.roupas-vendas img:hover {
+  transform: scale(1.1); /* Aumenta a imagem em 10% */
+}
 .roupas-vendas1 {
   margin-left: 500px;
   margin-top: 50px;
@@ -385,6 +392,14 @@ footer p {
   gap: 95px;
   /* Espaçamento horizontal e vertical entre as imagens */
 
+}
+
+.roupas-vendas1 img {
+  transition: transform 0.3s ease-in-out; /* Transição suave */
+}
+
+.roupas-vendas1 img:hover {
+  transform: scale(1.1); /* Aumenta a imagem em 10% */
 }
 
 .rating {
@@ -631,8 +646,13 @@ footer p {
 .imagens-do-browse-by-dress-style img {
   border-radius: 20px; /* Arredonda os cantos */
   padding: 5px; /* Adiciona um pequeno espaçamento interno */
+  transition: transform 0.3s ease-in-out; /* Transição suave */
+
 }
 
+.imagens-do-browse-by-dress-style img:hover {
+  transform: scale(1.1); /* Aumenta a imagem em 10% */
+}
 .our-happy-costomers {
 
   text-align: center;
@@ -949,3 +969,4 @@ footer p {
   color:#555;
   text-decoration: none; /* Remove o sublinhado */
 }
+
