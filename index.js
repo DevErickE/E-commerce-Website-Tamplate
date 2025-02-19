@@ -60,3 +60,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     updateOpinions(); // Inicializa com os três primeiros visíveis
 });
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const closeButton = document.querySelector(".close-x");
+    const footer = document.querySelector("footer");
+
+    closeButton.addEventListener("click", function () {
+        footer.classList.add("hide"); // Adiciona a classe para esconder o footer
+    });
+});

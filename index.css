@@ -94,8 +94,17 @@ footer {
   /* Garante que o footer apareça sobre outros elementos */
   box-sizing: border-box;
   /* Garante que o padding não afete a largura */
+  transition: transform 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  text-align: center;
+
+
 }
 
+footer.hide {
+  transform: translateY(-100%);
+  opacity: 0;
+  pointer-events: none;
+}
 footer p {
   margin: 0;
   /* Remove margens padrão do parágrafo */
