@@ -45,11 +45,25 @@ body {
 
 /* SHOP.CO à esquerda */
 .shopco {
-  font-weight: bold;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 900;  /* Não precisa de negrito extra, a fonte já é bem grossa */
   font-size: 30px;
   color: black;
   margin-right: 30px;
   /* Espaço entre o SHOP.CO e os itens ao lado */
+}
+
+.string_t-shirt {
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 900;  /* Não precisa de negrito extra, a fonte já é bem grossa */
+  font-size: 40px;
+  color: black;
+}
+
+
+.string_t-shirt p {
+  margin-top: -125;
+  margin-left: 700;
 }
 
 /* Estilos da barra de navegação */
@@ -335,8 +349,8 @@ footer p {
 .new-arrivals {
   text-align: center;
   /* Centraliza o texto */
-  font-weight: bold;
-  /* Deixa o texto em negrito */
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 900;  /* Não precisa de negrito extra, a fonte já é bem grossa */
   font-size: 35px;
   /* Define o tamanho da fonte um pouco maior */
   margin-top: 40px;
@@ -402,6 +416,39 @@ footer p {
   transform: scale(1.1); /* Aumenta a imagem em 10% */
 }
 
+.roupas-vendas_t-shirt {
+  margin-left: 240px;
+  margin-top: 35px;
+  display: flex;
+  /* Organiza as imagens em uma linha flexível */
+  flex-wrap: wrap;
+  /* Permite que imagens "quebrem" para a linha seguinte se necessário */
+  gap: 40px;
+  /* Espaçamento horizontal e vertical entre as imagens */
+ 
+}
+
+.roupas-vendas_t-shirt img {
+  width: 350px;  /* Define a largura para 300 pixels */
+  height: auto;   /* Mantém a proporção original da imagem */
+}
+
+.roupas-vendas_t-shirt_small {
+  margin-left: 90px;
+  margin-top: -335px;
+  display: flex;
+  /* Organiza as imagens em uma linha flexível */
+  flex-wrap: wrap;
+  /* Permite que imagens "quebrem" para a linha seguinte se necessário */
+  gap: 40px;
+  /* Espaçamento horizontal e vertical entre as imagens */
+ 
+}
+
+.roupas-vendas_t-shirt_small img {
+  width: 130px;  /* Define a largura para 300 pixels */
+  height: auto;   /* Mantém a proporção original da imagem */
+}
 .rating {
   display: flex;
   /* Coloca os grupos em uma linha */
@@ -600,21 +647,21 @@ footer p {
 
   text-align: center;
   /* Centraliza o texto */
-  font-weight: bold;
-  /* Deixa o texto em negrito */
   font-size: 35px;
   /* Define o tamanho da fonte um pouco maior */
   margin: 0;
   /* Remove margens padrão */
   margin-top: 60px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 900;  
 }
 
 .browse-by-dress-style {
 
   text-align: center;
   /* Centraliza o texto */
-  font-weight: bold;
-  /* Deixa o texto em negrito */
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 900;  
   font-size: 35px;
   /* Define o tamanho da fonte um pouco maior */
   margin: 0;
@@ -657,8 +704,8 @@ footer p {
 
   text-align: center;
   /* Centraliza o texto */
-  font-weight: bold;
-  /* Deixa o texto em negrito */
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 900; 
   font-size: 35px;
   /* Define o tamanho da fonte um pouco maior */
   margin-left: -500px;
@@ -786,8 +833,9 @@ footer p {
 
 .latest-offers {
   color: white;
-  font-weight: bold;
-  font-size: 36px;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 900;
+  font-size: 30px;
   /* Tamanho maior da fonte */
   margin-bottom: 20px;
   /* Espaço entre o texto e o campo de email */
@@ -797,7 +845,7 @@ footer p {
 .email-container {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 15px;
   /* Espaço entre o campo de email e o botão */
 }
 
@@ -806,7 +854,7 @@ footer p {
   align-items: center;
   border: 2px solid white;
   /* Borda branca para o campo de email */
-  padding: 5px;
+  padding: 6px;
   border-radius: 20px;
   margin-top: -30px;
   /* Ajuste o valor conforme necessário para mover o campo para cima */
@@ -927,9 +975,9 @@ footer p {
 }
 
 .first-column-title {
-  font-family: "Integral CF Bold", serif;
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 900;
   font-size: 30px; /* Reduz ligeiramente o tamanho da fonte */
-  font-weight: 800;
   margin: 0;
   padding-bottom: 15px; /* Reduz o espaço abaixo do título */
 }
@@ -970,3 +1018,20 @@ footer p {
   text-decoration: none; /* Remove o sublinhado */
 }
 
+.direcionamento-paginas {
+  color: rgb(103, 103, 103);
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 100px;
+}
+
+.direcionamento-paginas a {
+  color: inherit; /* Mantém a cor cinza */
+  text-decoration: none; /* Remove o sublinhado */
+  margin-right: 5px; /* Espaço à direita de cada link */
+  margin-left: 5px;
+}
+
+.direcionamento-paginas a:hover {
+  text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+}
