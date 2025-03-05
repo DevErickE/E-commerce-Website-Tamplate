@@ -1,6 +1,6 @@
 # 🚀 Bem-vindo à **SHOP.CO** 🛍️
 
-![SHOP.CO Banner](https://source.unsplash.com/1600x500/?fashion,clothes)
+<img src="imagens/SHOP.CO.png" alt="SHOP.CO Banner">
 
 ## 👕 Sobre nós
 A **SHOP.CO** é uma loja exclusiva especializada na venda de roupas, calças e shorts das marcas mais prestigiadas do mundo da moda! Aqui você encontra qualidade, estilo e sofisticação em cada peça.
