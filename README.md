@@ -22,9 +22,9 @@ A **SHOP.CO** é uma loja exclusiva especializada na venda de roupas, calças e 
 <img src="https://source.unsplash.com/400x250/?fashion,model" width="400px" alt="Fashion" style="border-radius:10px;box-shadow:5px 5px 15px rgba(0,0,0,0.2);">
 
 ## 📲 Conecte-se conosco!
-🔹 [Instagram](https://instagram.com/shop.co)  
-🔹 [Facebook](https://facebook.com/shop.co)  
-🔹 [Site Oficial](https://shopco.com)  
+🔹 [Instagram](https://instagram.com/shop.co)   - Não funcional no momento
+🔹 [Facebook](https://facebook.com/shop.co) - Não funcional no momento
+🔹 [Site Oficial](https://devericke.github.io/E-commerce-Website-Tamplate/)  
 
 ## 🛒 Como comprar?
 1️⃣ Escolha seus produtos favoritos.  
