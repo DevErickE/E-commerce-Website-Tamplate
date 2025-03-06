@@ -501,6 +501,21 @@ footer p {
   margin-left: 92px;
 }
 
+.stars-group-t-shirt {
+  display: flex;
+  align-items: center;
+  /* Alinha estrelas e números no centro */
+  gap: 5px;
+  /* Espaçamento entre as estrelas e o número */
+  margin-top: -30px;
+  margin-left: 700px;
+}
+
+.stars-group-t-shirt .star {
+  width: 25px;  /* Ajuste o tamanho desejado */
+  height: 25px;
+}
+
 
 .star {
   display: inline-block;
@@ -582,6 +597,18 @@ footer p {
   /* Espaçamento entre os elementos */
 }
 
+.price-container-t-shirt {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 700px;
+  margin-top: -18px;
+  gap: 200px;
+  /* Espaçamento entre os elementos */
+}
+
+.price-container-t-shirt .price {
+  font-size: 28px;
+}
 /* Estilo para os preços principais */
 .price {
   font-size: 18px;
@@ -1034,4 +1061,139 @@ footer p {
 
 .direcionamento-paginas a:hover {
   text-decoration: underline; /* Adiciona um sublinhado ao passar o mouse */
+}
+
+.resume-string-t-shirt {
+  margin-left: 700;
+  margin-top: -10;
+  color:#555;
+}
+
+.tshirt-selection-container {
+  display: flex;
+  gap: 10px; /* Espaçamento entre os círculos */
+  margin-left:695;
+}
+
+.tshirt-option {
+  width: 25px;  /* Tamanho menor */
+  height: 25px;
+  border-radius: 50%; /* Transforma em círculo */
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+  border: 2px solid #ccc; /* Borda padrão */
+}
+
+.tshirt-option:hover {
+  transform: scale(1.2); /* Aumenta levemente no hover */
+}
+
+.tshirt-gray {
+  background-color: gray;
+}
+
+.tshirt-white {
+  background-color: white;
+  border: 2px solid black; /* Melhor contraste */
+}
+
+.tshirt-blue {
+  background-color: blue;
+}
+
+.tshirt-size-container {
+  display: flex;
+  gap: 12px; /* Espaçamento entre os botões */
+  margin-left: 700;
+}
+
+.tshirt-size-option {
+  width: 80px;  /* Largura do botão */
+  height: 40px;  /* Altura do botão */
+  border-radius: 20px; /* Borda arredondada */
+  background-color: #e0e0e1; /* Cinza padrão */
+  color: #7a7979; /* Cinza escuro para preto */
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px; /* Centraliza o texto verticalmente */
+  cursor: pointer;
+  border: 2px solid #e0dddd; /* Borda cinza escura */
+  transition: all 0.3s ease-in-out;
+}
+
+/* Efeito ao passar o mouse */
+.tshirt-size-option:hover {
+  background-color: #b0b0b0; /* Cinza mais escuro */
+  color: black;
+}
+
+/* Quando a opção de tamanho for selecionada */
+.tshirt-size-option.selected {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+.tshirt-quantity-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  font-size: 20px;
+  margin-top: 35 ;
+  margin-left: -335;
+}
+
+.tshirt-quantity-button,
+.tshirt-quantity-number {
+  border: 2px solid #d3d3d3; /* Borda cinza clara */
+  border-radius: 10px; /* Bordas arredondadas */
+  padding: 5px 10px; /* Ajusta o espaço interno */
+}
+
+.tshirt-quantity-button {
+  width: 40px;
+  height: 40px;
+  background-color: #ddd;
+  border: none;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+}
+
+.tshirt-quantity-button:hover {
+  background-color: #bbb;
+}
+
+.tshirt-quantity-number {
+  min-width: 50px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+
+.button-Add-to-Cart {
+  background-color: black; /* Cor do fundo do botão */
+  color: white; /* Cor da escrita dentro do botão */
+  font-size: 15px; /* Tamanho da fonte */
+  padding: 15px 150px; /* Tamanho do botão (mais largo e alto) */
+  border: none; /* Remove a borda padrão */
+  border-radius: 25px; /* Borda arredondada */
+  cursor: pointer; /* Cursor de mão ao passar por cima */
+  transition: background-color 0.3s ease, color 0.3s ease; /* Efeito suave nas mudanças de cor */
+  margin-top: -45;
+  margin-left: 950;
+}
+
+.button-Add-to-Cart:hover {
+  background-color: lightgray; /* Cor ao passar o mouse por cima */
+  color: black; /* Cor da escrita quando passar o mouse */
+}
+
+.button-Add-to-Cart:active {
+  background-color: white; /* Cor ao clicar no botão */
+  color: black; /* Cor da escrita quando clicar */
 }

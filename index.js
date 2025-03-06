@@ -78,3 +78,29 @@ document.querySelector('.negrito').addEventListener('click', function (event) {
         behavior: 'smooth' // Faz a rolagem suave
     });
 });
+
+
+function selectTshirtSize(selectedElement) {
+    // Remove a classe 'selected' de todas as opções de tamanho da T-shirt
+    document.querySelectorAll(".tshirt-size-option").forEach(option => {
+        option.classList.remove("selected");
+    });
+
+    // Adiciona a classe 'selected' apenas à opção clicada
+    selectedElement.classList.add("selected");
+}
+
+
+let tshirtQuantity = 1; // Quantidade inicial
+
+function increaseTshirtQuantity() {
+    tshirtQuantity++;
+    document.getElementById("tshirt-quantity").innerText = tshirtQuantity;
+}
+
+function decreaseTshirtQuantity() {
+    if (tshirtQuantity > 1) { // Evita valores negativos
+        tshirtQuantity--;
+        document.getElementById("tshirt-quantity").innerText = tshirtQuantity;
+    }
+}
