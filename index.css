@@ -1072,7 +1072,7 @@ footer p {
 .tshirt-selection-container {
   display: flex;
   gap: 10px; /* Espaçamento entre os círculos */
-  margin-left:695;
+  margin-left: 695px;
 }
 
 .tshirt-option {
@@ -1080,12 +1080,22 @@ footer p {
   height: 25px;
   border-radius: 50%; /* Transforma em círculo */
   cursor: pointer;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, border 0.3s ease, box-shadow 0.3s ease; /* Transições suaves */
   border: 2px solid #ccc; /* Borda padrão */
 }
 
 .tshirt-option:hover {
   transform: scale(1.2); /* Aumenta levemente no hover */
+}
+
+.tshirt-option:active {
+  transform: scale(0.9); /* Efeito de "pressionar" o círculo ao clicar */
+}
+
+.tshirt-option.selected {
+  border: 2px solid #ff9900; /* Borda mais grossa e colorida */
+  box-shadow: 0 0 10px rgba(255, 153, 0, 0.7); /* Sombra mais intensa e colorida */
+  transform: scale(1.2); /* Aumenta levemente para destacar */
 }
 
 .tshirt-gray {

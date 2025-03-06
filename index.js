@@ -72,6 +72,19 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+// Função para selecionar e manter o círculo clicado
+document.querySelectorAll('.tshirt-option').forEach(option => {
+    option.addEventListener('click', function() {
+      // Remove a classe 'selected' de todos os círculos
+      document.querySelectorAll('.tshirt-option').forEach(opt => {
+        opt.classList.remove('selected');
+      });
+      
+      // Adiciona a classe 'selected' ao círculo clicado
+      this.classList.add('selected');
+    });
+  });
+  
 document.querySelector('.negrito').addEventListener('click', function (event) {
     event.preventDefault(); // Impede o comportamento padrão do link
     document.querySelector('#signup-section').scrollIntoView({
