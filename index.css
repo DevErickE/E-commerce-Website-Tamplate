@@ -1104,7 +1104,7 @@ footer p {
 
 .tshirt-white {
   background-color: white;
-  border: 2px solid black; /* Melhor contraste */
+  border: 2px solid gray; /* Melhor contraste */
 }
 
 .tshirt-blue {
