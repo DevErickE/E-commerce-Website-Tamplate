@@ -273,28 +273,48 @@ footer p {
   /* Cor do texto (opcional) */
 }
 
-.pesquisa {
-  padding: 8px 12px;
-  font-size: 16px;
-  border: 1px solid #ccc;
-  /* Borda leve */
-  border-radius: 25px;
-  /* Borda arredondada */
-  margin-left: 50px;
-  /* Espaçamento à esquerda do campo de pesquisa */
-  height: 35px;
-  transition: all 0.3s ease;
-  /* Transição suave ao interagir */
-  width: 800px;
+.lupa {
+  position: absolute;
+  left: 650px; /* Ajuste conforme necessário */
+  width: 20px; /* Ajuste o tamanho da imagem, se necessário */
+  height: 20px; /* Ajuste o tamanho da imagem, se necessário */
 }
 
-/* Estilo para o foco do campo de pesquisa */
-.pesquisa:focus {
-  border-color: #007bff;
-  /* Altera a cor da borda ao focar */
-  outline: none;
-  /* Remove o contorno padrão do navegador */
+
+.search-container {
+  position: relative;
+  width: 800px; /* Mesmo tamanho que o campo de pesquisa */
 }
+
+.pesquisa {
+  padding: 8px 12px;
+  padding-left: 35px; /* Ajuste o valor para mover o texto para a direita */
+  font-size: 16px;
+  border: 1px solid #dfdddd;
+  border-radius: 25px;
+  margin-left: 50px;
+  height: 35px;
+  transition: all 0.3s ease;
+  width: 800px;
+  background-color: #eeeded; /* Fundo cinza mais escuro */
+}
+
+.pesquisa:focus {
+  border-color: #b8baba;
+  outline: none;
+}
+
+/* Estilo da lupa */
+.lupa {
+  position: absolute;
+  left: 60px; /* Ajuste a posição da imagem à esquerda */
+  top: 50%;
+  transform: translateY(-50%); /* Centraliza a imagem verticalmente */
+  width: 20px; /* Ajuste o tamanho da imagem */
+  height: 20px; /* Ajuste o tamanho da imagem */
+  pointer-events: none; /* Faz com que a imagem não bloqueie a interação com o campo de pesquisa */
+}
+
 
 .icon-container {
   display: flex;
