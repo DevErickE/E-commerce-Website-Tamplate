@@ -71,7 +71,7 @@ body {
   display: flex;
   /* Flexbox para alinhar os itens na linha */
   gap: 17px;
-  /* Pequeno espaçamento entre os itens */
+  /* Pequeno espaçamento entre os itens */  
 }
 
 /* Estilos para os itens da navegação */
@@ -82,6 +82,26 @@ body {
   /* Tamanho da fonte */
   color: black;
   /* Cor do texto */
+  cursor: pointer;
+}
+
+.fas.fa-chevron-down {
+  font-size: 15px; /* Ajuste o tamanho da seta */
+}
+
+.arrow.up {
+  transform: rotate(180deg); /* Seta virada para cima */
+}
+
+.shop-options {
+  display: none; /* Esconde as opções inicialmente */
+  margin-top: 24px; /* Espaço entre a seta e as opções */
+  font-size: 5px; /* Tamanho menor da fonte */
+  background-color: #f0f0f0;
+  position: absolute; /* Faz a seleção aparecer sobre o conteúdo */
+  padding: 5px;
+  border: 1px solid #ccc;
+  z-index: 1000; /* Garante que a seleção fique sobre os outros elementos */
 }
 
 
@@ -1219,4 +1239,13 @@ footer p {
   /* Define o tamanho da fonte um pouco maior */
   margin-top: 30px;
   margin-left: 100px;
+}
+
+
+.aviso_carrinho_vazio {
+
+
+  text-align: center;
+  color:grey;
+  font-size: 24px;
 }

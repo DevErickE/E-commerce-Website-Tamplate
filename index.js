@@ -117,3 +117,16 @@ function decreaseTshirtQuantity() {
         document.getElementById("tshirt-quantity").innerText = tshirtQuantity;
     }
 }
+
+
+document.querySelector('.shop-toggle').addEventListener('click', function() {
+    const options = document.querySelector('.shop-options');
+    const arrow = document.querySelector('.arrow');
+    
+    // Alterna a exibição das opções
+    options.style.display = options.style.display === 'block' ? 'none' : 'block';
+    
+    // Alterna a direção da seta
+    arrow.classList.toggle('up');
+  });
+  
