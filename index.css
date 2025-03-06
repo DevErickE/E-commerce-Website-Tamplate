@@ -284,10 +284,14 @@ footer p {
 .icon-container i {
   font-size: 18px; /* Ícones menores */
   cursor: pointer;
+  color: black; /* Aqui você pode garantir que todos os ícones na container fiquem pretos */
+
 }
 
 .icon-container i.carrinho {
   content: '\f07a'; /* Código do ícone de carrinho do Font Awesome */
+  color: black; /* Muda a cor do carrinho para preto */
+
 }
 
 .icon-container i.perfil {
@@ -834,9 +838,9 @@ footer p {
 .custom-footer-like {
   background-color: black;
   /* Fundo preto */
-  border: 2px solid black;
+  border: 5px solid black;
   /* Borda preta em volta do bloco */
-  padding: 20px 20px;
+  padding: 35px 290px;
   /* Garantir que o padding seja igual em cima e embaixo */
   display: flex;
   justify-content: space-between;
@@ -844,9 +848,9 @@ footer p {
   align-items: center;
   max-width: 950px;
   margin: 30px auto;
-  border-radius: 10px;
+  border-radius: 30px;
   /* Bordas arredondadas */
-  height: 100px;
+  height: 90px;
   /* A altura permanece a mesma */
 }
 
@@ -854,18 +858,19 @@ footer p {
 .latest-offers {
   color: white;
   font-family: 'Bebas Neue', sans-serif;
-  font-weight: 900;
-  font-size: 30px;
+  font-weight: 1000;
+  font-size: 45px;
   /* Tamanho maior da fonte */
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   /* Espaço entre o texto e o campo de email */
+  margin-left: -250px;
 }
 
 
 .email-container {
   display: flex;
   align-items: center;
-  gap: 15px;
+  gap: -20px;
   /* Espaço entre o campo de email e o botão */
 }
 
@@ -875,7 +880,7 @@ footer p {
   border: 2px solid white;
   /* Borda branca para o campo de email */
   padding: 6px;
-  border-radius: 20px;
+  border-radius: 30px;
   margin-top: -30px;
   /* Ajuste o valor conforme necessário para mover o campo para cima */
 }
@@ -1006,11 +1011,12 @@ footer p {
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px; /* Reduz a margem inferior */
-  gap: 3px; /* Diminui ainda mais a distância entre os links */
+  gap: 10px; /* Diminui ainda mais a distância entre os links */
 }
 
 .social a {
-  margin-right: 2px; /* Reduz ainda mais o espaçamento entre os itens dentro do .social */
+  margin-right: 10px; /* Reduz ainda mais o espaçamento entre os itens dentro do .social */
+  font-size: 50px;
 }
 
 .underline {
@@ -1028,15 +1034,16 @@ footer p {
 }
 
 .margem_das_info {
-  margin-left: 440px; /* Reduz a margem esquerda para aproximar o conteúdo */
-  margin-right: 440px;
+  margin-left: 200px; /* Reduz a margem esquerda para aproximar o conteúdo */
+  margin-right: 180px;
 }
 
 .links_uteis {
-
-  color:#555;
+  color: #555;
   text-decoration: none; /* Remove o sublinhado */
+  font-size: 20px; /* Ajuste o valor para o tamanho desejado */
 }
+
 
 .direcionamento-paginas {
   color: rgb(103, 103, 103);
@@ -1199,4 +1206,17 @@ footer p {
 .button-Add-to-Cart:active {
   background-color: white; /* Cor ao clicar no botão */
   color: black; /* Cor da escrita quando clicar */
+}
+
+
+.your-cart {
+
+  
+  /* Centraliza o texto */
+  font-family: 'Bebas Neue', sans-serif;
+  font-weight: 900;  /* Não precisa de negrito extra, a fonte já é bem grossa */
+  font-size: 35px;
+  /* Define o tamanho da fonte um pouco maior */
+  margin-top: 30px;
+  margin-left: 100px;
 }
