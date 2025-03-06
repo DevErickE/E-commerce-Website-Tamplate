@@ -545,38 +545,31 @@ footer p {
 
 
 .view-all-button {
-  display: inline-block;
-  /* Torna o elemento clicável como um botão */
-  padding: 5px 10px;
-  /* Adiciona um pouco de espaçamento interno */
-  font-size: 12px;
-  /* Letras bem pequenas */
-  font-weight: bold;
-  /* Coloca o texto em negrito */
-  color: rgba(0, 0, 0, 0.6);
-  /* Texto com claridade baixa (cinza claro) */
-  background-color: rgba(0, 0, 0, 0.1);
-  /* Fundo com claridade baixa */
-  border: none;
-  /* Sem borda */
-  border-radius: 5px;
-  /* Bordas levemente arredondadas */
-  text-align: center;
-  /* Centraliza o texto */
-  cursor: pointer;
-  /* Mostra o ícone de mão no hover */
-  transition: all 0.3s ease;
-  /* Transição suave ao passar o mouse */
-  justify-content: center;
+  display: inline-block; /* Para que se comporte como um botão */
+  padding: 10px 50px; /* Espaçamento interno */
+  border: 0.1px solid #c9c7c7; /* Borda preta */
+  border-radius: 25px; /* Bordas arredondadas */
+  background-color: white; /* Fundo branco */
+  color: black; /* Texto preto */
+  font-size: 12px; /* Tamanho da fonte */
+  font-weight: bold; /* Fonte em negrito */
+  text-align: center; /* Centraliza o texto */
+  cursor: pointer; /* Muda o cursor para mãozinha */
+  transition: all 0.3s ease; /* Transição suave para todos os efeitos */
   margin-left: 890px;
 }
 
 .view-all-button:hover {
-  background-color: rgba(0, 0, 0, 0.2);
-  /* Fundo ligeiramente mais escuro no hover */
-  color: rgba(0, 0, 0, 0.8);
-  /* Texto um pouco mais escuro no hover */
+  background-color: #f0f0f0; /* Fundo cinza claro ao passar o mouse */
+  border-color: #333; /* Borda mais escura ao passar o mouse */
 }
+
+.view-all-button:active {
+  background-color: #ddd; /* Fundo cinza mais escuro ao clicar */
+  border-color: #000; /* Borda preta ao clicar */
+  transform: scale(0.98); /* Efeito de "pressionar" o botão */
+}
+
 
 /* Contêiner para organizar os preços */
 .price-container {
