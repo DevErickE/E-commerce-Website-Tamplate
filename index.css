@@ -3,6 +3,10 @@ body {
   /* Cor de fundo azul claro */
 }
 
+img.favicon {
+  border-radius: 50%;
+}
+
 .close-x {
   position: absolute;
   right: 15px;
