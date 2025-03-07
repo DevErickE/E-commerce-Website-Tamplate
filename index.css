@@ -1305,7 +1305,7 @@ footer p {
   transition: background-color 0.3s ease, color 0.3s ease;
   /* Efeito suave nas mudanças de cor */
   margin-top: -45;
-  margin-left: 950;
+  margin-left: 1000;
 }
 
 .button-Add-to-Cart:hover {
