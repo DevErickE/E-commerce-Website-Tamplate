@@ -1363,9 +1363,10 @@ footer p {
 
   .shopco {
     font-size: 26px;
-    margin-right: 0;
+    margin-right: 250px;
     text-align: center;
     margin-bottom: 10px;
+    
   }
 
   .barradecima {
@@ -1677,4 +1678,5 @@ footer p {
     margin-top: 10px;
     text-align: center;
   }
+
 }
