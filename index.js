@@ -130,3 +130,24 @@ document.querySelector('.shop-toggle').addEventListener('click', function() {
     arrow.classList.toggle('up');
   });
   
+
+  document.querySelector('.button-Add-to-Cart').addEventListener('click', function() {
+    const notification = document.getElementById('notification');
+    notification.classList.add('show');
+    setTimeout(() => {
+        if (notification.classList.contains('show')) {
+            notification.classList.remove('show');
+        }
+    }, 1500); // 1.5 segundos
+});
+
+function closeNotification() {
+    document.getElementById('notification').classList.remove('show');
+}
+
+function moveNotificationUp() {
+    const notification = document.getElementById('notification');
+    if (notification.classList.contains('show')) {
+        notification.classList.add('move-up');
+    }
+}

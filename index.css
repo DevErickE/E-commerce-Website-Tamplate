@@ -1680,3 +1680,30 @@ footer p {
   }
 
 }
+
+
+.notification {
+  position: fixed;
+  top: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #28a745;
+  color: white;
+  padding: 15px 30px;
+  border-radius: 5px;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+.notification.show {
+  top: 25px;
+  opacity: 1;
+}
+
+.close-btn-cart {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 20px;
+  margin-left: 10px;
+  cursor: pointer;
+}
