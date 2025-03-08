@@ -74,17 +74,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // Função para selecionar e manter o círculo clicado
 document.querySelectorAll('.tshirt-option').forEach(option => {
-    option.addEventListener('click', function() {
-      // Remove a classe 'selected' de todos os círculos
-      document.querySelectorAll('.tshirt-option').forEach(opt => {
-        opt.classList.remove('selected');
-      });
-      
-      // Adiciona a classe 'selected' ao círculo clicado
-      this.classList.add('selected');
+    option.addEventListener('click', function () {
+        // Remove a classe 'selected' de todos os círculos
+        document.querySelectorAll('.tshirt-option').forEach(opt => {
+            opt.classList.remove('selected');
+        });
+
+        // Adiciona a classe 'selected' ao círculo clicado
+        this.classList.add('selected');
     });
-  });
-  
+});
+
 document.querySelector('.negrito').addEventListener('click', function (event) {
     event.preventDefault(); // Impede o comportamento padrão do link
     document.querySelector('#signup-section').scrollIntoView({
@@ -119,19 +119,19 @@ function decreaseTshirtQuantity() {
 }
 
 
-document.querySelector('.shop-toggle').addEventListener('click', function() {
+document.querySelector('.shop-toggle').addEventListener('click', function () {
     const options = document.querySelector('.shop-options');
     const arrow = document.querySelector('.arrow');
-    
+
     // Alterna a exibição das opções
     options.style.display = options.style.display === 'block' ? 'none' : 'block';
-    
+
     // Alterna a direção da seta
     arrow.classList.toggle('up');
-  });
-  
+});
 
-  document.querySelector('.button-Add-to-Cart').addEventListener('click', function() {
+
+document.querySelector('.button-Add-to-Cart').addEventListener('click', function () {
     const notification = document.getElementById('notification');
     notification.classList.add('show');
     setTimeout(() => {
