@@ -1148,6 +1148,11 @@ footer p {
   color: #555;
 }
 
+.resume-string-clothes {
+  margin-left: 105;
+  margin-top: -10;
+  color: #555;
+}
 .tshirt-selection-container {
   display: flex;
   gap: 10px;
@@ -1745,4 +1750,102 @@ footer p {
   /* Cor ao clicar no botão */
   color: black;
   /* Cor da escrita quando clicar */
+}
+
+
+.clothes-size-container {
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* 2 colunas com largura automática */
+  gap: 8px; /* Espaço pequeno entre colunas e linhas */
+  justify-content: start; /* Alinha tudo à esquerda */
+  margin-left: 70;
+}
+
+.clothes-size-option {
+  width: 70px;
+  height: 35px;
+  border-radius: 20px;
+  background-color: #e0e0e1;
+  color: #7a7979;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 40px;
+  cursor: pointer;
+  border: 2px solid #e0dddd;
+  transition: all 0.3s ease-in-out;
+  margin-left: 30px;
+}
+
+.clothes-size-option:hover {
+  background-color: #b0b0b0;
+  color: black;
+}
+
+.clothes-size-option.selected {
+  background-color: black;
+  color: white;
+  border: 2px solid black;
+}
+
+
+.clothes-selection-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaçamento bem curto entre botões */
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 100; /* Alinhado ao canto esquerdo */
+}
+
+.clothes-selection-container1 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Espaçamento bem curto entre botões */
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-left: 100; /* Alinhado ao canto esquerdo */
+  margin-top: 10px;
+}
+
+.clothes-option {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%; /* Botão redondo */
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Cores dos botões */
+.clothes-gray { background-color: gray; }
+.clothes-white { background-color: white; border: 1px solid #ccc; }
+.clothes-blue { background-color: blue; }
+
+.clothes-green { background-color: green; }
+.clothes-red { background-color: red; }
+.clothes-yellow { background-color: yellow; }
+.clothes-orange { background-color: orange; }
+.clothes-lightblue { background-color: lightblue; }
+.clothes-darkblue { background-color: darkblue; }
+.clothes-purple { background-color: purple; }
+.clothes-darkpink { background-color: deeppink; }
+.clothes-black { background-color: black; }
+
+/* Estilo ao selecionar */
+.clothes-option.selected::after {
+  content: '\2713'; /* Símbolo de check ✔ */
+  font-size: 20px;
+  color: white;
+}
+
+.clothes-white.selected::after {
+  color: black; /* Para garantir visibilidade no fundo branco */
+}
+
+.clothes-option.selected {
+  border: 2px solid black;
 }

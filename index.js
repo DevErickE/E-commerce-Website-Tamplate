@@ -103,6 +103,15 @@ function selectTshirtSize(selectedElement) {
     selectedElement.classList.add("selected");
 }
 
+function selectTshirtSize(selectedElement) {
+    // Remove a classe 'selected' de todas as opções de tamanho da T-shirt
+    document.querySelectorAll(".clothes-size-option").forEach(option => {
+        option.classList.remove("selected");
+    });
+
+    // Adiciona a classe 'selected' apenas à opção clicada
+    selectedElement.classList.add("selected");
+}
 
 let tshirtQuantity = 1; // Quantidade inicial
 
@@ -150,4 +159,4 @@ function moveNotificationUp() {
     if (notification.classList.contains('show')) {
         notification.classList.add('move-up');
     }
-}
+}   
