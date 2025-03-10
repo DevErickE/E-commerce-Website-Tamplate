@@ -103,7 +103,7 @@ function selectTshirtSize(selectedElement) {
     selectedElement.classList.add("selected");
 }
 
-function selectTshirtSize(selectedElement) {
+function selectClothesSize(selectedElement) {
     // Remove a classe 'selected' de todas as opções de tamanho da T-shirt
     document.querySelectorAll(".clothes-size-option").forEach(option => {
         option.classList.remove("selected");
