@@ -1,0 +1,279 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <title>E-commerce Website Template</title>
+</head>
+<link rel="icon" href="imagens/favicon.png" type="image/png">
+
+<body>
+    <footer>
+        <p>
+            Sign up and get 20% off on your first order.
+            <a class="negrito" href="index.html">Sign Up Now</a>
+            <span class="close-x" onclick="moveNotificationUp()">&times;</span>
+        </p>
+    </footer>
+
+    <br><br>
+    <div class="shop-container">
+        <p class="shopco">SHOP.CO</p>
+        <div class="barradecima">
+            <p class="shop-toggle">
+                Shop <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+            </p>
+            <div class="shop-options">
+                <p>New Arrivals</p>
+                <p>Top Selling</p>
+                <p>Men</p>
+                <p>Woman</p>
+
+            </div>
+            <p>On Sale</p>
+            <p>New Arrivals</p>
+            <p>Brands</p>
+        </div>
+
+        <div class="search-container">
+            <input class="pesquisa" type="search" placeholder="Search for products">
+            <img src="imagens/lupashearch.png" alt="Search" class="lupa">
+        </div>
+
+        <div class="icon-container">
+            <a href="carrinho.html">
+                <i class="fas fa-shopping-cart carrinho"></i>
+            </a>
+            <i class="fas fa-user perfil"></i>
+        </div>
+    </div>
+
+    <div class="direcionamento-paginas">
+        <p>
+            <a href="index.html">Home</a> >
+            <a>Casual</a>
+        </p>
+    </div>
+    <p class="big-string-casual-category">Formal</p>
+
+    <div class="Filters">
+        <label>Filters</label>
+        <br>
+    </div>
+
+    <p class="resume-string-clothes">T-shirts</p>
+    <p class="resume-string-clothes">Shorts</p>
+    <p class="resume-string-clothes">Shirts</p>
+    <p class="resume-string-clothes">Hoodie</p>
+    <p class="resume-string-clothes">Jeans</p>
+    <p class="resume-string-clothes">Shorts</p>
+
+
+
+    <div class="price-container5">
+        <label>Price</label>
+        <div class="range-container">
+            <div class="slider-track"></div>
+            <input type="range" min="50" max="500" value="50" id="minRange" class="slider">
+            <input type="range" min="50" max="500" value="200" id="maxRange" class="slider">
+        </div>
+        <div class="values">
+            <span id="minValue">$50</span>
+            <span id="maxValue">$500</span>
+        </div>
+    </div>
+    <br>
+
+    <div class="Filters">
+        <br><br><br>
+        <label>Colors</label>
+    </div>
+
+    <div class="clothes-selection-container">
+        <div class="clothes-option clothes-green" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-red" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-yellow" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-orange" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-lightblue" onclick="toggleSelection(this)"></div>
+    </div>
+    <div class="clothes-selection-container1">
+        <div class="clothes-option clothes-darkblue" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-purple" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-darkpink" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-white" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-black" onclick="toggleSelection(this)"></div>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle('selected');
+        }
+    </script>
+
+    <br><br>
+    <div class="Filters">
+        <br><br><br>
+        <label>Size</label>
+    </div>
+
+    <div class="clothes-size-container">
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">XX-Small</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">X-Small</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">Small</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">Medium</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">Large</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">XX-Large</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">3X-Large</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">4X-Large</div>
+    </div>
+
+    <div class="Filters">
+        <br><br><br><br>
+        <label>Dress Style</label>
+        <br>
+    </div>
+
+    <p class="resume-string-clothes">Casual</p>
+    <p class="resume-string-clothes">Formal</p>
+    <p class="resume-string-clothes">Party</p>
+    <p class="resume-string-clothes">Gym</p>
+    <br><br><br>
+
+    <button class="button-filter">Apply Filter</button>
+<br><br><br><br>
+    <div class="clothes-category">
+
+        <img src="imagens/gradient.png">
+        <img src="imagens/polo.png">
+        <img src="imagens/black.png">
+        <img src="imagens/skynny.png">
+        <img src="imagens/checkered.png">
+        <img src="imagens/sleeve.png">
+        <img src="imagens/skynny.png">
+        <img src="imagens/Vertical.png">
+        <img src="imagens/loose.png">
+    </div>
+
+    <br><br><br><br>
+
+    <div class="custom-footer-like" id="signup-section">
+        <p class="latest-offers">STAY UP TO DATE ABOUT OUR LATEST OFFERS</p>
+        <div class="email-container">
+            <div class="email-input-container">
+                <span class="email-icon">&#9993;</span>
+                <input type="email" placeholder="Enter your email address" class="email-input" id="email" />
+            </div>
+            <button class="subscribe-btn" onclick="validateEmail()">Subscribe to Newsletter</button>
+        </div>
+    </div>
+    <p id="error-message" style="color: red;"></p>
+
+    <div class="margem_das_info">
+
+
+        <div class="links-container">
+
+            <div class="firstcolumn">
+                <h3 class="first-column-title">SHOP.CO</h3>
+                <p>We have clothes that suits your style and <br> which you’re proud to wear. From <br> women to
+                    men.</p>
+                <div class="social">
+                    <a>
+                        <img src="./imagens/twitter.png" alt="Twitter logo">
+                    </a>
+
+                    <a>
+                        <img src="./imagens/facebook.png" alt="Facebook logo">
+                    </a>
+
+                    <a>
+                        <img src="./imagens/instagram.png" alt="Instagram logo">
+                    </a>
+
+                    <a href="https://github.com/DevErickE" target="_blank">
+                        <img src="./imagens/github.png" alt="Github logo">
+                    </a>
+
+                </div>
+            </div>
+
+            <div class="links">
+
+                <h3>COMPANY</h3>
+
+                <ul>
+                    <li><a class="links_uteis">About</a></li>
+                    <li><a class="links_uteis">Features</a></li>
+                    <li><a class="links_uteis">Works</a></li>
+                    <li><a class="links_uteis">Career</a></li>
+                </ul>
+            </div>
+
+            <div class="links">
+
+                <h3>HELP</h3>
+
+                <ul>
+                    <li><a class="links_uteis">Customer Support</a></li>
+                    <li><a class="links_uteis">Delivery Details</a></li>
+                    <li><a class="links_uteis">Terms & Conditions</a></li>
+                    <li><a class="links_uteis">Privacy Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="links">
+
+                <h3>FAQ</h3>
+
+                <ul>
+                    <li><a class="links_uteis">Account</a></li>
+                    <li><a class="links_uteis">Manage Deliveries</a></li>
+                    <li><a class="links_uteis">Orders</a></li>
+                    <li><a class="links_uteis">Payments</a></li>
+                </ul>
+            </div>
+
+            <div class="links">
+
+                <h3>RESOURCES</h3>
+
+                <ul>
+                    <li><a class="links_uteis">Free eBooks</a></li>
+                    <li><a class="links_uteis">Development Tutorial</a></li>
+                    <li><a class="links_uteis">How to - Blog</a></li>
+                    <li><a class="links_uteis">Youtube Playlist</a></li>
+
+
+
+                </ul>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="underline">
+
+
+            <p class="copyright">Shop.co © 2000-2025, All Rights Reserved.</p>
+
+            <div class="cardslogo">
+                <img src="./imagens/Visa.png" alt="Visa card logo">
+                <img src="./imagens/Mastercard.png" alt="Mastercard logo">
+                <img src="./imagens/Paypal.png" alt="Paypal logo">
+                <img src="./imagens/applePay.png" alt="ApplePay logo">
+                <img src="./imagens/G Pay.png" alt="GooglePay logo">
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+    <body>
+
+        <script src="index.js"></script>
