@@ -57,79 +57,95 @@
             <a>Casual</a>
         </p>
     </div>
+    <p class="big-string-casual-category">Casual</p>
 
     <div class="Filters">
-        <p>Filters</p>
-
+        <label>Filters</label>
+        <br>
     </div>
 
-    <p>T-shirts</p>
-    <p>Shorts</p>
-    <p>Shirts</p>
-    <p>Hoodie</p>
-    <p>Jeans</p>
-    <p>Shorts</p>
+    <p class="resume-string-clothes">T-shirts</p>
+    <p class="resume-string-clothes">Shorts</p>
+    <p class="resume-string-clothes">Shirts</p>
+    <p class="resume-string-clothes">Hoodie</p>
+    <p class="resume-string-clothes">Jeans</p>
+    <p class="resume-string-clothes">Shorts</p>
 
-    <p>Price</p>
-<div class="50$-500$">
 
-    <p>1$</p>
-    <p>500$</p>
-</div>
 
-<p class="resume-string-clothes"> Price</p>
+    <div class="price-container5">
+        <label>Price</label>
+        <div class="range-container">
+            <div class="slider-track"></div>
+            <input type="range" min="50" max="500" value="50" id="minRange" class="slider">
+            <input type="range" min="50" max="500" value="200" id="maxRange" class="slider">
+        </div>
+        <div class="values">
+            <span id="minValue">$50</span>
+            <span id="maxValue">$500</span>
+        </div>
+    </div>
+    <br>
 
-<div class="clothes-selection-container">
-    <div class="clothes-option clothes-green" onclick="toggleSelection(this)"></div>
-    <div class="clothes-option clothes-red" onclick="toggleSelection(this)"></div>
-    <div class="clothes-option clothes-yellow" onclick="toggleSelection(this)"></div>
-    <div class="clothes-option clothes-orange" onclick="toggleSelection(this)"></div>
-    <div class="clothes-option clothes-lightblue" onclick="toggleSelection(this)"></div>
-</div>
+    <div class="Filters">
+        <br><br><br>
+        <label>Colors</label>
+    </div>
+
+    <div class="clothes-selection-container">
+        <div class="clothes-option clothes-green" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-red" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-yellow" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-orange" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-lightblue" onclick="toggleSelection(this)"></div>
+    </div>
     <div class="clothes-selection-container1">
-    <div class="clothes-option clothes-darkblue" onclick="toggleSelection(this)"></div>
-    <div class="clothes-option clothes-purple" onclick="toggleSelection(this)"></div>
-    <div class="clothes-option clothes-darkpink" onclick="toggleSelection(this)"></div>
-    <div class="clothes-option clothes-white" onclick="toggleSelection(this)"></div>
-    <div class="clothes-option clothes-black" onclick="toggleSelection(this)"></div>
-</div>
-  
-  <script>
-    function toggleSelection(element) {
-      element.classList.toggle('selected');
-    }
-  </script>
-  
+        <div class="clothes-option clothes-darkblue" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-purple" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-darkpink" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-white" onclick="toggleSelection(this)"></div>
+        <div class="clothes-option clothes-black" onclick="toggleSelection(this)"></div>
+    </div>
+
+    <script>
+        function toggleSelection(element) {
+            element.classList.toggle('selected');
+        }
+    </script>
+
     <br><br>
-  <p class="resume-string-clothes"> Size</p>
+    <div class="Filters">
+        <br><br><br>
+        <label>Size</label>
+    </div>
 
-  <div class="clothes-size-container">
-    <div class="clothes-size-option" onclick="selectClothesSize(this)">XX-Small</div>
-    <div class="clothes-size-option" onclick="selectClothesSize(this)">X-Small</div>
-    <div class="clothes-size-option" onclick="selectClothesSize(this)">Small</div>
-    <div class="clothes-size-option" onclick="selectClothesSize(this)">Medium</div>
-    <div class="clothes-size-option" onclick="selectClothesSize(this)">Large</div>
-    <div class="clothes-size-option" onclick="selectClothesSize(this)">XX-Large</div>
-    <div class="clothes-size-option" onclick="selectClothesSize(this)">3X-Large</div>
-    <div class="clothes-size-option" onclick="selectClothesSize(this)">4X-Large</div>
-  </div>
+    <div class="clothes-size-container">
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">XX-Small</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">X-Small</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">Small</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">Medium</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">Large</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">XX-Large</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">3X-Large</div>
+        <div class="clothes-size-option" onclick="selectClothesSize(this)">4X-Large</div>
+    </div>
 
-  <div class="Filters">
-    <p>Filters</p>
+    <div class="Filters">
+        <br><br><br><br>
+        <label>Dress Style</label>
+        <br>
+    </div>
 
-</div>
+    <p class="resume-string-clothes">Casual</p>
+    <p class="resume-string-clothes">Formal</p>
+    <p class="resume-string-clothes">Party</p>
+    <p class="resume-string-clothes">Gym</p>
+    <br><br><br>
 
-<p>T-shirts</p>
-<p>Shorts</p>
-<p>Shirts</p>
-<p>Hoodie</p>
-<p>Jeans</p>
-<p>Shorts</p>
-
-<button class="button-filter">Apply Filter</button>
-
+    <button class="button-filter">Apply Filter</button>
+<br><br><br><br>
     <div class="clothes-category">
-        <p>Casual</p>
+
         <img src="imagens/gradient.png">
         <img src="imagens/polo.png">
         <img src="imagens/black.png">

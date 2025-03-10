@@ -160,3 +160,32 @@ function moveNotificationUp() {
         notification.classList.add('move-up');
     }
 }   
+
+const minRange = document.getElementById("minRange");
+const maxRange = document.getElementById("maxRange");
+const minValue = document.getElementById("minValue");
+const maxValue = document.getElementById("maxValue");
+const sliderTrack = document.querySelector(".slider-track");
+
+function updateSlider() {
+    let min = parseInt(minRange.value);
+    let max = parseInt(maxRange.value);
+    
+    if (min >= max) {
+        minRange.value = max - 1;
+        min = max - 1;
+    }
+    
+    minValue.textContent = `$${min}`;
+    maxValue.textContent = `$${max}`;
+    
+    const minPercent = ((min - minRange.min) / (minRange.max - minRange.min)) * 100;
+    const maxPercent = ((max - maxRange.min) / (maxRange.max - maxRange.min)) * 100;
+    
+    sliderTrack.style.left = minPercent + "%";
+    sliderTrack.style.right = (100 - maxPercent) + "%";
+}
+
+minRange.addEventListener("input", updateSlider);
+maxRange.addEventListener("input", updateSlider);
+updateSlider();
