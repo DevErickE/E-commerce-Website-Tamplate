@@ -447,6 +447,8 @@ footer p {
 .roupas-vendas img {
   transition: transform 0.3s ease-in-out;
   /* Transição suave */
+  border: 2px solid #ebeaea; /* Borda cinza clara */
+  border-radius: 20px; /* Bordas levemente arredondadas (opcional) */
 }
 
 .roupas-vendas img:hover {
@@ -490,6 +492,8 @@ footer p {
 .roupas-vendas1 img {
   transition: transform 0.3s ease-in-out;
   /* Transição suave */
+  border: 2px solid #ebebeb; /* Borda cinza clara */
+  border-radius: 10px; /* Bordas levemente arredondadas (opcional) */
 }
 
 .roupas-vendas1 img:hover {
@@ -501,7 +505,7 @@ footer p {
   margin-left: 240px;
   margin-top: 35px;
   display: flex;
-  /* Organiza as imagens em uma linha flexível */
+  /* Organiza as imagens em uma linha flexível */  
   flex-wrap: wrap;
   /* Permite que imagens "quebrem" para a linha seguinte se necessário */
   gap: 40px;
@@ -514,6 +518,8 @@ footer p {
   /* Define a largura para 300 pixels */
   height: auto;
   /* Mantém a proporção original da imagem */
+  border: 2px solid #ebeaea; /* Borda cinza clara */
+  border-radius: 20px; /* Bordas levemente arredondadas (opcional) */
 }
 
 .roupas-vendas_t-shirt_small {
@@ -794,7 +800,7 @@ footer p {
 }
 
 .borda-browse-by-dress-style {
-  background-color: #d9d5d5;
+  background-color: #e7e6e6;
   /* Cinza mais escuro */
   padding: 30px;
   border-radius: 15px;
@@ -807,6 +813,7 @@ footer p {
   /* Define um limite para não ficar exagerado */
   margin-left: 500px;
   margin-top: 70px;
+  border-radius: 30px; /* Bordas levemente arredondadas (opcional) */
 }
 
 .imagens-do-browse-by-dress-style {
@@ -821,6 +828,7 @@ footer p {
   /* Adiciona um pequeno espaçamento interno */
   transition: transform 0.3s ease-in-out;
   /* Transição suave */
+  border-radius: 15px; /* Bordas levemente arredondadas (opcional) */
 
 }
 
@@ -1914,4 +1922,27 @@ label {
   margin-top: 60;
   font-size: 30px;
 
+}
+
+.clothes-category {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 colunas */
+  gap: 100px 80px; /* 5px entre as linhas e 15px entre as colunas */
+  width: fit-content;
+  margin-left: 500;
+  margin-top: -950;
+
+}
+
+.clothes-category img {
+  width: 250px; /* Ajuste o tamanho conforme necessário */
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out; /* Transição suave */
+  border: 2px solid #ebeaea; /* Borda cinza clara */
+  border-radius: 20px; /* Bordas levemente arredondadas (opcional) */
+}
+
+.clothes-category img:hover {
+  transform: scale(1.1); /* Aumenta a imagem em 10% */
 }
