@@ -189,3 +189,10 @@ function updateSlider() {
 minRange.addEventListener("input", updateSlider);
 maxRange.addEventListener("input", updateSlider);
 updateSlider();
+
+
+document.querySelectorAll('.resume-string-clothes').forEach(item => {
+    item.addEventListener('click', function() {
+        this.classList.toggle('active'); // Alterna a classe ao clicar
+    });
+});

@@ -434,13 +434,13 @@ footer p {
 
 
 .roupas-vendas {
-  margin-left: 500px;
+  margin-left: 495px;
   margin-top: 50px;
   display: flex;
   /* Organiza as imagens em uma linha flexível */
   flex-wrap: wrap;
   /* Permite que imagens "quebrem" para a linha seguinte se necessário */
-  gap: 40px;
+  gap: 30px;
   /* Espaçamento horizontal e vertical entre as imagens */
 }
 
@@ -449,6 +449,8 @@ footer p {
   /* Transição suave */
   border: 2px solid #ebeaea; /* Borda cinza clara */
   border-radius: 20px; /* Bordas levemente arredondadas (opcional) */
+  width: 185px;  /* Define a largura fixa */
+  height: auto;  /* Mantém a proporção original */
 }
 
 .roupas-vendas img:hover {
@@ -463,28 +465,28 @@ footer p {
   /* Organiza as imagens em uma linha flexível */
   flex-wrap: wrap;
   /* Permite que imagens "quebrem" para a linha seguinte se necessário */
-  gap: 60px;
+  gap: 30px;
   /* Espaçamento horizontal e vertical entre as imagens */
 }
 
 .nome-roupas {
-  margin-left: 510px;
-  display: flex;
-  /* Organiza as imagens em uma linha flexível */
-  flex-wrap: wrap;
-  /* Permite que imagens "quebrem" para a linha seguinte se necessário */
-  gap: 97px;
-  /* Espaçamento horizontal e vertical entre as imagens */
-
-}
-
-.nome-roupas1 {
   margin-left: 500px;
   display: flex;
   /* Organiza as imagens em uma linha flexível */
   flex-wrap: wrap;
   /* Permite que imagens "quebrem" para a linha seguinte se necessário */
-  gap: 95px;
+  gap: 98px;
+  /* Espaçamento horizontal e vertical entre as imagens */
+
+}
+
+.nome-roupas1 {
+  margin-left: 510px;
+  display: flex;
+  /* Organiza as imagens em uma linha flexível */
+  flex-wrap: wrap;
+  /* Permite que imagens "quebrem" para a linha seguinte se necessário */
+  gap: 80px;
   /* Espaçamento horizontal e vertical entre as imagens */
 
 }
@@ -494,6 +496,8 @@ footer p {
   /* Transição suave */
   border: 2px solid #ebeaea; /* Borda cinza clara */
   border-radius: 20px; /* Bordas levemente arredondadas (opcional) */
+  width: 185px;  /* Define a largura fixa */
+  height: auto;  /* Mantém a proporção original */
 }
 
 .roupas-vendas1 img:hover {
@@ -559,7 +563,7 @@ footer p {
   display: flex;
   /* Coloca os grupos em uma linha */
   margin-left: 505px;
-  gap: 130px;
+  gap: 120px;
   /* Espaçamento entre os grupos */
   justify-content: start;
   /* Alinha os grupos à esquerda */
@@ -1162,6 +1166,7 @@ footer p {
   margin-left: 105;
   margin-top: -10;
   color: #555;
+  gap: 8px; /* Espaço entre a seta e o texto */
 }
 .tshirt-selection-container {
   display: flex;
@@ -1956,4 +1961,22 @@ label {
   gap: 10px;
   margin-left: 44px;
   margin-top: -20px;
+}
+
+
+.arrow-category {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out, color 0.2s ease-in-out;
+}
+
+.arrow-category:hover {
+  transform: scale(1.3);
+  /* Pequeno aumento ao passar o mouse */
+  color: gray;
+}
+
+.arrow-category:active {
+  transform: scale(0.9);
+  /* Pequeno efeito ao clicar */
+  color: black;
 }
