@@ -1870,6 +1870,7 @@ label {
   font-weight: bold;
   display: block;
   margin-bottom: 10px;
+  font-family: 'Bebas Neue', sans-serif;
 }
 .range-container {
   position: relative;
@@ -1929,7 +1930,7 @@ label {
 .clothes-category {
   display: grid;
   grid-template-columns: repeat(3, 1fr); /* 3 colunas */
-  gap: 100px 80px; /* 5px entre as linhas e 15px entre as colunas */
+  gap: 20px 60px; /* 5px entre as linhas e 15px entre as colunas */
   width: fit-content;
   margin-left: 500;
   margin-top: -950;
@@ -1947,4 +1948,12 @@ label {
 
 .clothes-category img:hover {
   transform: scale(1.1); /* Aumenta a imagem em 10% */
+}
+
+.preços-descontos-category {
+  display: flex;
+  /* Alinha os itens horizontalmente */
+  gap: 10px;
+  margin-left: 44px;
+  margin-top: -20px;
 }
