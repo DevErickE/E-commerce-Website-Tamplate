@@ -492,8 +492,8 @@ footer p {
 .roupas-vendas1 img {
   transition: transform 0.3s ease-in-out;
   /* Transição suave */
-  border: 2px solid #ebebeb; /* Borda cinza clara */
-  border-radius: 10px; /* Bordas levemente arredondadas (opcional) */
+  border: 2px solid #ebeaea; /* Borda cinza clara */
+  border-radius: 20px; /* Bordas levemente arredondadas (opcional) */
 }
 
 .roupas-vendas1 img:hover {
@@ -539,6 +539,8 @@ footer p {
   /* Define a largura para 300 pixels */
   height: auto;
   /* Mantém a proporção original da imagem */
+  border: 2px solid #ebeaea; /* Borda cinza clara */
+  border-radius: 20px; /* Bordas levemente arredondadas (opcional) */
 }
 
 .rating {
