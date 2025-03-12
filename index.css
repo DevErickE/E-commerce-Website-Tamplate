@@ -1,11 +1,19 @@
 body {
   background-color: rgb(245, 241, 241);
-  /* Cor de fundo azul claro */
+  color: black;
+  margin: 0;
+  padding: 0;
 }
 
 img.favicon {
   border-radius: 50%;
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 
 .close-x {
   position: absolute;
@@ -666,7 +674,7 @@ footer p {
   /* Muda o cursor para mãozinha */
   transition: all 0.3s ease;
   /* Transição suave para todos os efeitos */
-  margin-left: 890px;
+  margin-left: 860px;
 }
 
 .view-all-button:hover {
@@ -1980,3 +1988,4 @@ label {
   /* Pequeno efeito ao clicar */
   color: black;
 }
+
