@@ -139,7 +139,7 @@ document.querySelector('.shop-toggle').addEventListener('click', function () {
     arrow.classList.toggle('up');
 });
 
-
+//função para ativar o aviso de add-cart
 document.querySelector('.button-Add-to-Cart').addEventListener('click', function () {
     const notification = document.getElementById('notification');
     notification.classList.add('show');
