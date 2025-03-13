@@ -1,0 +1,239 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+    <title>E-commerce Website Template</title>
+  </head>
+  <link rel="icon" href="imagens/favicon.png" type="image/png">
+  
+  <body>
+    <footer>
+      <p>
+        Sign up and get 20% off on your first order.
+        <a class="negrito" href="index.html">Sign Up Now</a>
+        <span class="close-x" onclick="moveNotificationUp()">&times;</span>
+      </p>
+    </footer>
+  
+    <br><br>
+    <div class="shop-container">
+      <p class="shopco">SHOP.CO</p>
+      <div class="barradecima">
+        <p class="shop-toggle">
+          Shop <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+        </p>
+        <div class="shop-options">
+          <p>New Arrivals</p>
+          <p>Top Selling</p>
+          <p>Men</p>
+          <p>Woman</p>
+  
+        </div>
+        <p>On Sale</p>
+        <p>New Arrivals</p>
+        <p>Brands</p>
+      </div>
+  
+      <div class="search-container">
+        <input class="pesquisa" type="search" placeholder="Search for products">
+        <img src="imagens/lupashearch.png" alt="Search" class="lupa">
+      </div>
+  
+      <div class="icon-container">
+        <a href="carrinho.html">
+          <i class="fas fa-shopping-cart carrinho"></i>
+        </a>
+        <i class="fas fa-user perfil"></i>
+      </div>
+    </div>
+  
+    <div class="direcionamento-paginas">
+      <p>
+        <a href="index.html">Home</a> >
+        <a>Shop</a> >
+        <a>Men</a> >
+        <a>Sleeve</a>
+      </p>
+    </div>
+    <div class="roupas-vendas_t-shirt">
+      <img src="imagens/loose.png" alt="sleeve">
+    </div>
+  
+    <div class="roupas-vendas_t-shirt_small">
+      <img src="imagens/loose.png" alt="sleeve">
+    </div>
+  
+    <div class="string_t-shirt">
+      <p>SLEEVE STRIPED T-SHIRT</p>
+    </div>
+  
+    <div class="stars-group-t-shirt">
+      <span class="star full"></span>
+      <span class="star full"></span>
+      <span class="star full"></span>
+      <span class="star full"></span>
+      <span class="star half"></span>
+      <p class="rating-number">4.5/5</p>
+    </div>
+  
+    <div class="price-container-t-shirt">
+      <p class="price">$80</p>
+    </div>
+  
+    <p class="resume-string-t-shirt">A casual and stylish piece with striped patterns on the sleeves,
+      perfect for a modern and versatile look.
+    </p>
+    <br><br>
+    <p class="resume-string-t-shirt">Select Colors</p>
+  
+    <div class="tshirt-selection-container">
+      <div class="tshirt-option tshirt-gray"></div>
+      <div class="tshirt-option tshirt-white"></div>
+      <div class="tshirt-option tshirt-blue"></div>
+    </div>
+    <br><br>
+    <p class="resume-string-t-shirt">Choose Size</p>
+  
+    <div class="tshirt-size-container">
+      <div class="tshirt-size-option" onclick="selectTshirtSize(this)">Small</div>
+      <div class="tshirt-size-option" onclick="selectTshirtSize(this)">Medium</div>
+      <div class="tshirt-size-option" onclick="selectTshirtSize(this)">Large</div>
+      <div class="tshirt-size-option" onclick="selectTshirtSize(this)">X-Large</div>
+    </div>
+  
+    <div class="tshirt-quantity-container">
+      <button class="tshirt-quantity-button" onclick="decreaseTshirtQuantity()">-</button>
+      <span class="tshirt-quantity-number" id="tshirt-quantity">1</span>
+      <button class="tshirt-quantity-button" onclick="increaseTshirtQuantity()">+</button>
+    </div>
+  
+  
+    <button class="button-Add-to-Cart">Add to Cart</button>
+    <div id="notification" class="notification">
+      <span>Added to cart successfully!</span>
+      <button class="close-btn-cart" onclick="closeNotification()">&times;</button>
+    </div>
+  
+    <br><br><br><br>
+  
+    <div class="custom-footer-like" id="signup-section">
+      <p class="latest-offers">STAY UP TO DATE ABOUT OUR LATEST OFFERS</p>
+      <div class="email-container">
+        <div class="email-input-container">
+          <span class="email-icon">&#9993;</span>
+          <input type="email" placeholder="Enter your email address" class="email-input" id="email" />
+        </div>
+        <button class="subscribe-btn" onclick="validateEmail()">Subscribe to Newsletter</button>
+      </div>
+    </div>
+    <p id="error-message" style="color: red;"></p>
+  
+    <div class="margem_das_info">
+  
+  
+      <div class="links-container">
+  
+        <div class="firstcolumn">
+          <h3 class="first-column-title">SHOP.CO</h3>
+          <p>We have clothes that suits your style and <br> which you’re proud to wear. From <br> women to
+            men.</p>
+          <div class="social">
+            <a>
+              <img src="./imagens/twitter.png" alt="Twitter logo">
+            </a>
+  
+            <a>
+              <img src="./imagens/facebook.png" alt="Facebook logo">
+            </a>
+  
+            <a>
+              <img src="./imagens/instagram.png" alt="Instagram logo">
+            </a>
+  
+            <a href="https://github.com/DevErickE" target="_blank">
+              <img src="./imagens/github.png" alt="Github logo">
+            </a>
+  
+          </div>
+        </div>
+  
+        <div class="links">
+  
+          <h3>COMPANY</h3>
+  
+          <ul>
+            <li><a class="links_uteis">About</a></li>
+            <li><a class="links_uteis">Features</a></li>
+            <li><a class="links_uteis">Works</a></li>
+            <li><a class="links_uteis">Career</a></li>
+          </ul>
+        </div>
+  
+        <div class="links">
+  
+          <h3>HELP</h3>
+  
+          <ul>
+            <li><a class="links_uteis">Customer Support</a></li>
+            <li><a class="links_uteis">Delivery Details</a></li>
+            <li><a class="links_uteis">Terms & Conditions</a></li>
+            <li><a class="links_uteis">Privacy Policy</a></li>
+          </ul>
+        </div>
+  
+        <div class="links">
+  
+          <h3>FAQ</h3>
+  
+          <ul>
+            <li><a class="links_uteis">Account</a></li>
+            <li><a class="links_uteis">Manage Deliveries</a></li>
+            <li><a class="links_uteis">Orders</a></li>
+            <li><a class="links_uteis">Payments</a></li>
+          </ul>
+        </div>
+  
+        <div class="links">
+  
+          <h3>RESOURCES</h3>
+  
+          <ul>
+            <li><a class="links_uteis">Free eBooks</a></li>
+            <li><a class="links_uteis">Development Tutorial</a></li>
+            <li><a class="links_uteis">How to - Blog</a></li>
+            <li><a class="links_uteis">Youtube Playlist</a></li>
+  
+  
+  
+          </ul>
+        </div>
+  
+      </div>
+  
+      <hr>
+  
+      <div class="underline">
+  
+  
+        <p class="copyright">Shop.co © 2000-2025, All Rights Reserved.</p>
+  
+        <div class="cardslogo">
+          <img src="./imagens/Visa.png" alt="Visa card logo">
+          <img src="./imagens/Mastercard.png" alt="Mastercard logo">
+          <img src="./imagens/Paypal.png" alt="Paypal logo">
+          <img src="./imagens/applePay.png" alt="ApplePay logo">
+          <img src="./imagens/G Pay.png" alt="GooglePay logo">
+        </div>
+  
+  
+      </div>
+  
+    </div>
+  
+    <body>
+  
+      <script src="index.js"></script>
